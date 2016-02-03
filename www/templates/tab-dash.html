@@ -1,0 +1,22 @@
+<ion-view view-title="Dashboard">
+  <div class="search bar bar-header item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="Search">
+    </label>
+    <button class="button button-clear">
+      Cancel
+    </button>
+  </div>
+
+  <ion-content class="padding">
+
+    <ion-list>
+      <ion-item ng-repeat="i in test ">
+        {{ i }}
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>
