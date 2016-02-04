@@ -1,6 +1,7 @@
 angular.module('starter.controllers', [])
 
   .controller('GuideController', function ($scope, GuideFactory, _) {
+    debugger;
     $scope.guide = []
     GuideFactory.getGuide()
       .then(function (data) {
@@ -51,8 +52,10 @@ angular.module('starter.controllers', [])
 //  $scope.chat = Chats.get($stateParams.chatId);
 //})
 //
-//.controller('AccountCtrl', function($scope) {
-//  $scope.settings = {
-//    enableFriends: true
-//  };
-//});
+.controller('AccountCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+
+  $scope.loginForm = true;
+});

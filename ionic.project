@@ -1,6 +1,21 @@
 {
   "name": "streamsavvy_guide",
   "app_id": "",
+  "proxies" : [
+  {
+    "path" : "/guide/",
+    "proxyUrl" : "http://localhost:8000/guide"
+  },
+  {
+    "path" : "/netflixable",
+    "proxyUrl" : "http://localhost:8000/netflixable"
+  },
+  {
+    "path" : "/json-package/",
+    "proxyUrl" : "http://localhost:8000/json-package"
+  },
+  ],
+
   "gulpStartupTasks": [
     "sass",
     "watch"
