@@ -6,7 +6,7 @@ function slingInProviders(suggestion) {
  */
 
 angular.module('search', [])
-  .controller('SearchController', function ($scope, $rootScope, $http, http, PackageFactory, _, Fuse, BANNED_CHANNELS, SLING_CHANNELS, SERVICE_PRICE_LIST, N, MAJOR_NETWORKS, growl) {
+  .controller('SearchController', function ($scope, $rootScope, $http, http, PackageFactory, _, Fuse, BANNED_CHANNELS, SLING_CHANNELS, SERVICE_PRICE_LIST, N, MAJOR_NETWORKS) {
 
     var nShows = [];
 

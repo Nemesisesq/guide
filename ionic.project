@@ -13,6 +13,14 @@
   {
     "path" : "/json-package/",
     "proxyUrl" : "http://localhost:8000/json-package"
+  },
+  {
+    "path": "/login/",
+    "proxyUrl" : "http://localhost:8000/login"
+  },
+  {
+    "path": "/popular-shows",
+    "proxyUrl" : "http://localhost:8000/api/popular-shows"
   }
   ],
 

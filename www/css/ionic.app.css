@@ -9762,6 +9762,9 @@ a.button {
   align-items: center;
   margin-top: 50%; }
 
+.modal-header {
+  background-color: white; }
+
 .modal-dialog {
   text-align: center;
   width: 560px;

@@ -12,6 +12,10 @@ navigation history that also transitions its views in and out.
 
   <!-- Chats Tab -->
   <ion-tab title="Dash" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/dash">
+    <ui-view name="search"></ui-view>
+    <ui-view name="shows"></ui-view>
+    <ui-view name="services"></ui-view>
+    <ui-view name="hardware"></ui-view>
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 

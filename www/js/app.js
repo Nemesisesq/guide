@@ -13,7 +13,8 @@ angular.module('streamsavvy', ['ionic',
   'search',
   'step.one',
   'step.two',
-  'step.three'
+  'step.three',
+  'ui.bootstrap'
 ])
 
   .constant('CONFIG', {
@@ -136,6 +137,24 @@ angular.module('streamsavvy', ['ionic',
             templateUrl: 'templates/tab-dash.html',
             controller: 'DashController'
           },
+
+          'search' : {
+            templateUrl : 'features/search/search.html',
+            controller : 'SearchController'
+          },
+
+          'shows' : {
+            templateUrl : 'features/journey_one/step-one/step-one.html',
+            controller : 'StepOneController'
+          },
+          'services' : {
+            templateUrl : 'features/journey_one/step-two/step-two.html',
+            controller : 'StepTwoController'
+          },
+          'hardware' : {
+            templateUrl : 'features/journey_one/step-three/step-three.html',
+            controller : 'StepThreeController'
+          }
 
 
         }
