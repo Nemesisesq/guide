@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic',
+angular.module('streamsavvy', ['ionic',
   'starter.controllers',
   'starter.services',
   'ss.login',
@@ -113,6 +113,7 @@ angular.module('starter', ['ionic',
         url: '/tab',
         abstract: true,
         templateUrl: 'templates/tabs.html'
+
       })
 
   // Each tab has its own nav history stack:
@@ -134,7 +135,9 @@ angular.module('starter', ['ionic',
           'tab-dash': {
             templateUrl: 'templates/tab-dash.html',
             controller: 'DashController'
-          }
+          },
+
+
         }
       })
 

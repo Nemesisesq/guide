@@ -20,11 +20,11 @@ var app = angular.module('ss.services', [])
 
 app.run(function ($http, Fuse, N) {
 
-  $http.get('/netflixable/')
-    .then(function (data) {
-
-      N.setShows(data.data)
-    })
+  //$http.get('/netflixable/')
+  //  .then(function (data) {
+  //
+  //    N.setShows(data.data)
+  //  })
 })
 
 

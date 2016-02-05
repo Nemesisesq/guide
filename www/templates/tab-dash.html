@@ -1,21 +1,26 @@
 <ion-view view-title="Dashboard">
-  <div class="search bar bar-header item-input-inset">
-    <label class="item-input-wrapper">
-      <i class="icon ion-ios-search placeholder-icon"></i>
-      <input type="search" placeholder="Search">
-    </label>
-    <button class="button button-clear">
-      Cancel
-    </button>
-  </div>
+  <!--<div class="search bar bar-header item-input-inset">-->
+    <!--<label class="item-input-wrapper">-->
+      <!--<i class="icon ion-ios-search placeholder-icon"></i>-->
+      <!--<input type="search" placeholder="Search">-->
+    <!--</label>-->
+    <!--<button class="button button-clear">-->
+      <!--Cancel-->
+    <!--</button>-->
+  <!--</div>-->
 
   <ion-content class="padding">
+    <div ng-controller="ModalController">
 
-    <ion-list>
-      <ion-item ng-repeat="i in test ">
-        {{ i }}
-      </ion-item>
-    </ion-list>
+      <button ng-click="openModal()">Call Me Maybe</button>
+
+    </div>
+
+    <!--<ion-list>-->
+      <!--<ion-item ng-repeat="i in test ">-->
+        <!--{{ i }}-->
+      <!--</ion-item>-->
+    <!--</ion-list>-->s
 
 
   </ion-content>
