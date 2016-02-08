@@ -6,7 +6,7 @@ function slingInProviders(suggestion) {
  */
 
 angular.module('search', [])
-  .controller('SearchController', function ($scope, $rootScope, $http, http, PackageFactory, _, Fuse, BANNED_CHANNELS, SLING_CHANNELS, SERVICE_PRICE_LIST, N, MAJOR_NETWORKS) {
+  .controller('SearchController', function ($scope, $rootScope, $http, http, PackageFactory, _, Fuse, BANNED_CHANNELS, SLING_CHANNELS, SERVICE_PRICE_LIST, N, MAJOR_NETWORKS, ENDPOINT) {
 
     var nShows = [];
 
@@ -74,7 +74,7 @@ angular.module('search', [])
     $scope.search = function (val) {
       if (val) {
         //$scope.suggestions = [];
-        return $http.get('/api/search?q=' + val)
+        return $http.get(ENDPOINT.url + '/api/search?q=' + val)
           .then(function (data) {
             debugger;
 
@@ -146,7 +146,7 @@ angular.module('search', [])
 
       if (suggestion.guidebox_id !== undefined && typeof suggestion.guidebox_id === 'number') {
         $scope.loading = true
-        $http.get('/channels/' + suggestion.guidebox_id)
+        $http.get(ENDPOINT.url +  '/channels/' + suggestion.guidebox_id)
           .then(function (data) {
 
             var opts = {
@@ -290,5 +290,13 @@ angular.module('search', [])
     })
 
 
-  });
+  })
+  .directive('searchShows', function () {
+    return {
+      templateUrl : 'features/search/search.html',
+      controller : 'SearchController',
+      restrict :'E'
+    }
+
+  })
 

@@ -48,4 +48,11 @@ angular.module('step.two',[])
     });
 
 
-});
+})
+  .directive('servicesBlock', function () {
+    return {
+      templateUrl : 'features/journey_one/step-two/step-two.html',
+      controller : 'StepTwoController',
+      restrict :'E'
+    }
+  })

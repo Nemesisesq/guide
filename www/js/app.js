@@ -16,9 +16,17 @@ angular.module('streamsavvy', ['ionic',
   'step.three',
   'ui.bootstrap'
 ])
+  .constant('ENDPOINT', {
+    url: 'http://localhost:8000'
+  })
+
+  /*.constant('Endpoint', {
+   url: 'http://dev.streamsavvy.tv/'
+   })
+   */
 
   .constant('CONFIG', {
-    'URL': location.origin
+    'URL': location.origin,
   })
   .constant('VIEW_WINDOWS', [
     {type: 'live', headerText: 'Live Over the Air.', toolTip: 'get your content as soon as it dropped.'},

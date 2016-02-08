@@ -28,7 +28,7 @@ app.run(function ($http, Fuse, N) {
 })
 
 
-app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', function ($http, $q, VIEW_WINDOWS, _) {
+app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,function ($http, $q, VIEW_WINDOWS, _, ENDPOINT) {
   // ;
 
   var _package = {};
@@ -52,7 +52,7 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', function ($ht
     postPackage: function (ssPackage) {
 
       //debugger;
-      $http.post('/json-package/', ssPackage);
+      $http.post(ENDPOINT.url + '/json-package/', ssPackage);
     },
 
     getPackage: function () {
@@ -96,7 +96,6 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', function ($ht
 
         chans = _.flatten(chans)
 
-        debugger;
 
         chans = _.uniq(chans, function (elem) {
 
@@ -168,10 +167,12 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', function ($ht
 }]);
 
 
-app.run(function (PackageFactory, $http, http, $rootScope) {
-  $http.get('/json-package/')
+app.run(function (PackageFactory, $http, http, $rootScope, ENDPOINT) {
+  $http.get(ENDPOINT.url + '/json-package/')
     .then(function (data) {
       $rootScope.env = data.data.env
+
+
 
       console.log(data);
 

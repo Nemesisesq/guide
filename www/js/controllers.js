@@ -1,11 +1,9 @@
 angular.module('starter.controllers', [])
 
   .controller('GuideController', function ($scope, GuideFactory, _) {
-    debugger;
     $scope.guide = []
     GuideFactory.getGuide()
       .then(function (data) {
-        debugger
         $scope.guide = data
 
       })

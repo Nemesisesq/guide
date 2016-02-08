@@ -198,4 +198,12 @@ angular.module('step.one', [])
     //
     //    PackageFactory.setPackage($scope.package)
     //})
-  });
+  })
+  .directive('showsBlock', function () {
+    return {
+      templateUrl: 'features/journey_one/step-one/step-one.html',
+
+      controller: 'StepOneController',
+      restrict: 'E'
+    }
+  })

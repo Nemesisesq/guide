@@ -1,5 +1,5 @@
 angular.module('ss.login', [])
-  .controller('ModalController', function ($scope, http, $ionicModal) {
+  .controller('ModalController', function ($scope, http, $ionicModal, PackageFactory, $http, ENDPOINT) {
 
 
     //$scope.login = 'Click Here to Login'
@@ -37,6 +37,13 @@ angular.module('ss.login', [])
       http.login(credentials)
         .then(function (data) {
           console.log(data);
+
+          $http.get(ENDPOINT.url + '/json-package/')
+            .then(function(data){
+              debugger
+              PackageFactory.setPackage(data.data)
+            })
+
           //$rootScope.logged_in = true;
           $scope.closeModal();
           //growl.success('Login Successful', {

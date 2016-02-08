@@ -106,3 +106,10 @@ angular.module('step.three', [])
 
 
   })
+  .directive('summaryBlock', function () {
+    return {
+      templateUrl : 'features/journey_one/step-three/step-three.html',
+      controller : 'StepThreeController',
+      restrict :'E'
+    }
+  })

@@ -1,11 +1,11 @@
 angular.module('starter.services', [])
 
 
-  .factory('GuideFactory', function ($http) {
+  .factory('GuideFactory', function ($http, ENDPOINT) {
     return {
       getGuide: function () {
         debugger;
-        return $http.get('/guide/')
+        return $http.get(ENDPOINT.url + '/guide')
           .then(function (data) {
 
             return data.data
