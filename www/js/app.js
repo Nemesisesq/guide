@@ -6,16 +6,21 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('streamsavvy', ['ionic',
-  'starter.controllers',
-  'starter.services',
-  'ss.login',
-  'ss.services',
-  'search',
-  'step.one',
-  'step.two',
-  'step.three',
-  'ui.bootstrap'
-])
+    'starter.controllers',
+    'starter.services',
+    'ss.login',
+    'ss.services',
+    'search',
+    'step.one',
+    'step.two',
+    'step.three',
+    'ui.bootstrap',
+    'ngResource'
+  ])
+  .config(['$resourceProvider', function ($resourceProvider) {
+    // Don't strip trailing slashes from calculated URLs
+    $resourceProvider.defaults.stripTrailingSlashes = false;
+  }])
   .constant('ENDPOINT', {
     url: 'http://localhost:8000'
   })
@@ -125,15 +130,15 @@ angular.module('streamsavvy', ['ionic',
 
       })
 
-  // Each tab has its own nav history stack:
-    .state('tab.guide', {
-      url : '/guide',
-      views: {
-        'tab-guide': {
-          templateUrl : 'templates/tab-guide.html',
-          controller : 'GuideController'
+      // Each tab has its own nav history stack:
+      .state('tab.guide', {
+        url: '/guide',
+        views: {
+          'tab-guide': {
+            templateUrl: 'templates/tab-guide.html',
+            controller: 'GuideController'
+          }
         }
-      }
 
       })
 
@@ -146,22 +151,22 @@ angular.module('streamsavvy', ['ionic',
             controller: 'DashController'
           },
 
-          'search' : {
-            templateUrl : 'features/search/search.html',
-            controller : 'SearchController'
+          'search': {
+            templateUrl: 'features/search/search.html',
+            controller: 'SearchController'
           },
 
-          'shows' : {
-            templateUrl : 'features/journey_one/step-one/step-one.html',
-            controller : 'StepOneController'
+          'shows': {
+            templateUrl: 'features/journey_one/step-one/step-one.html',
+            controller: 'StepOneController'
           },
-          'services' : {
-            templateUrl : 'features/journey_one/step-two/step-two.html',
-            controller : 'StepTwoController'
+          'services': {
+            templateUrl: 'features/journey_one/step-two/step-two.html',
+            controller: 'StepTwoController'
           },
-          'hardware' : {
-            templateUrl : 'features/journey_one/step-three/step-three.html',
-            controller : 'StepThreeController'
+          'hardware': {
+            templateUrl: 'features/journey_one/step-three/step-three.html',
+            controller: 'StepThreeController'
           }
 
 

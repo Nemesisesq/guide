@@ -86,11 +86,11 @@ angular.module('ss.services')
           }
         })
           .success(function (data) {
-            $window.sessionStorage.token = data.token
+            $window.sessionStorage.token = data.access_token;
             deffered.resolve(data)
           })
           .error(function (data, status, headers, config) {
-            delete $window.sessionStorage.token
+            delete $window.sessionStorage.token;
             //$log.error(e, code)
           });
         return deffered.promise;

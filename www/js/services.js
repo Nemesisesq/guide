@@ -5,7 +5,7 @@ angular.module('starter.services', [])
     return {
       getGuide: function () {
         debugger;
-        return $http.get(ENDPOINT.url + '/guide')
+        return $http.get(ENDPOINT.url + '/guide/')
           .then(function (data) {
 
             return data.data

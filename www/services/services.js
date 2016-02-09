@@ -117,7 +117,7 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,f
       var t = 0;
 
       var pkg = _package;
-      if (pkg.content.length > 0) {
+      if (!_.isEmpty(pkg.content)) {
 
         t = _.map(pkg.providers, function (elem) {
           return elem.price;

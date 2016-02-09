@@ -2,27 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102eed9b-63d5-4c22-8c32-fd5f3faca297" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic.project" afterPath="$PROJECT_DIR$/ionic.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/modal/modal.js" afterPath="$PROJECT_DIR$/www/features/journey_one/modal/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html" afterPath="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.js" afterPath="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.html" afterPath="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js" afterPath="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/journey_one/step-two/step-two.js" afterPath="$PROJECT_DIR$/www/features/journey_one/step-two/step-two.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/search/search.html" afterPath="$PROJECT_DIR$/www/features/search/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/search/search.js" afterPath="$PROJECT_DIR$/www/features/search/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/www/lib/angular/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/services/http.js" afterPath="$PROJECT_DIR$/www/services/http.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/services/interceptors.js" afterPath="$PROJECT_DIR$/www/services/interceptors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/services/services.js" afterPath="$PROJECT_DIR$/www/services/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/www/templates/tab-dash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tabs.html" afterPath="$PROJECT_DIR$/www/templates/tabs.html" />
     </list>
     <ignored path="streamsavvy_guide.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,18 +52,48 @@
       <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/features/search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.178572">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/features/search/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="84.333336">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.38589212">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step-one.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/filters/step-one.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -77,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -96,38 +122,8 @@
       <file leaf-file-name="step-one.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3571428">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/services/http.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.316">
-              <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interceptors.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/services/interceptors.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/features/journey_one/modal/modal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
+            <state vertical-scroll-proportion="-0.6785714">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,8 +132,8 @@
       <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/services/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-119.62963">
-              <caret line="170" column="44" selection-start-line="170" selection-start-column="2" selection-end-line="170" selection-end-column="44" />
+            <state vertical-scroll-proportion="-5.6666665">
+              <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -163,25 +159,25 @@
         <option value="$PROJECT_DIR$/www/js/services/http.js" />
         <option value="$PROJECT_DIR$/www/features/journey_one/modal/modal.scss" />
         <option value="$PROJECT_DIR$/www/features/journey_one/modal/modal.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
         <option value="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.js" />
         <option value="$PROJECT_DIR$/www/features/journey_one/step-two/step-two.js" />
-        <option value="$PROJECT_DIR$/www/js/services.js" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/ionic.project" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
-        <option value="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html" />
-        <option value="$PROJECT_DIR$/www/services/services.js" />
-        <option value="$PROJECT_DIR$/www/features/search/search.js" />
         <option value="$PROJECT_DIR$/www/features/journey_one/modal/modal.js" />
-        <option value="$PROJECT_DIR$/www/features/search/search.html" />
-        <option value="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js" />
         <option value="$PROJECT_DIR$/www/services/interceptors.js" />
+        <option value="$PROJECT_DIR$/www/services/services.js" />
+        <option value="$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js" />
         <option value="$PROJECT_DIR$/www/services/http.js" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html" />
+        <option value="$PROJECT_DIR$/www/js/services.js" />
+        <option value="$PROJECT_DIR$/www/features/search/search.html" />
+        <option value="$PROJECT_DIR$/www/features/search/search.js" />
       </list>
     </option>
   </component>
@@ -361,7 +357,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
+    <property name="SearchEverywhereHistoryKey" value="controller&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/controllers.js&#10;ind&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;index&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/services.js&#10;step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -480,14 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-one/step-one.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="26" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/features/search/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -516,6 +504,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -692,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.178572">
@@ -722,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26923078">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59227467">
@@ -742,14 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.115384616">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2692307">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -770,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3571428">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3319838">
@@ -794,14 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/features/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="84.333336">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/features/journey_one/modal/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -810,18 +760,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/features/search/search.html">
+    <entry file="file://$PROJECT_DIR$/www/services/interceptors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -834,34 +784,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-three/step-three.js">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/services/services.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-119.62963">
-          <caret line="170" column="44" selection-start-line="170" selection-start-column="2" selection-end-line="170" selection-end-column="44" />
+        <state vertical-scroll-proportion="-12.214286">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/services/interceptors.js">
+    <entry file="file://$PROJECT_DIR$/www/filters/step-one.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/services/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.316">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.29066667">
+          <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/services/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/features/journey_one/step-one/step-one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/features/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/features/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38589212">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
           <folding />
         </state>
       </provider>
