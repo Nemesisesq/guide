@@ -1,5 +1,10 @@
 angular.module('step.one', [])
-  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, VIEW_WINDOWS) {
+  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, VIEW_WINDOWS, ENDPOINT) {
+    $scope.moveItem = function(item, fromIndex, toIndex) {
+      //Move the item in the array
+      $scope.items.splice(fromIndex, 1);
+      $scope.items.splice(toIndex, 0, item);
+    };
 
     $scope.clearContent = function () {
       var pkg = PackageFactory.getPackage()
@@ -132,7 +137,7 @@ angular.module('step.one', [])
 
     $scope.popularShows = null;
 
-    $http.get('api/popular-shows')
+    $http.get(ENDPOINT.url +'/api/popular-shows/')
       .success(function (data) {
         $scope.popularShows = data.results;
         return data
@@ -207,3 +212,10 @@ angular.module('step.one', [])
       restrict: 'E'
     }
   })
+
+
+.controller('MyCtrl', function($scope) {
+  $scope.shouldShowDelete = false;
+  $scope.shouldShowReorder = false;
+  $scope.listCanSwipe = true
+});

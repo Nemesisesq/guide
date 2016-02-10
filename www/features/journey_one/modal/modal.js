@@ -30,7 +30,6 @@ angular.module('ss.login', [])
     });
 
     $scope.login = function (credentials) {
-      debugger;
       //credentials.next = "/api/";
       //credentials.csrfmiddlewaretoken = $cookies.get('csrftoken');
       credentials.submit = "Log in";
@@ -40,7 +39,6 @@ angular.module('ss.login', [])
 
           $http.get(ENDPOINT.url + '/json-package/')
             .then(function(data){
-              debugger
               PackageFactory.setPackage(data.data)
             })
 

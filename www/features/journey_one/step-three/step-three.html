@@ -1,18 +1,30 @@
-<div class="row">
+<ion-list>
+  <ion-item class="item-divider">Services</ion-item>
+  <ion-item ng-repeat="provider in services">
 
-  <div class="col-md-8 summary-list"><h3 class="services-header">Services</h3>
-  </div>
-  <div class="row service-rows" ng-repeat="provider in package.providers  ">
-    <div class=" summary-service">
-      <a target="_blank" href="{{ provider.home_url }}" rel="nofollow">{{ provider.display_name }}</a>
-    </div>
-  </div>
-  <div class="hardware-list"><h3 class="hardware-header">Hardware</h3></div>
-  <div class="click-on"><p>Click on the Hardware and you'll be redirected to the appropriate site.</p>
-  </div>
-  <div class="row hardware-rows" ng-repeat="item in package.hardware ">
-    <div class="summary-service">
-      <a target="_blank" href="{{ item.home_url }}" rel="nofollow">{{ item.name }}</a>
-    </div>
-  </div>
+    <p>{{ provider.display_name}}</p>
+    <ion-option-button class="button-assertive">
+      Remove
+    </ion-option-button>
+    <ion-option-button>
+      Subscribe
+    </ion-option-button>
+    <ion-reorder-button class="ion-navicon"
+                        on-reorder="moveItem(item, $fromIndex, $toIndex)">
+  </ion-item>
+</ion-list>
 
+
+<ion-list>
+  <ion-item class="item-divider">Hardware</ion-item>
+  <ion-item class="row hardware-rows" ng-repeat="item in hardware ">
+    <a target="_blank" href="{{ item.home_url }}" rel="nofollow">{{ item.name }}</a>
+    <ion-option-button class="button-assertive">
+      Remove
+    </ion-option-button>
+    <ion-option-button>
+      Buy
+    </ion-option-button>
+  </ion-item>
+
+</ion-list>

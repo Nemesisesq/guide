@@ -34,7 +34,7 @@ angular.module('search', [])
 
 
     //TODO make this a constant in the angular app
-    $http.get('netflixable/')
+    $http.get(ENDPOINT.url + '/netflixable/')
         .then(function (data) {
 
             nShows = new Fuse(data.data, {threshold: .2});

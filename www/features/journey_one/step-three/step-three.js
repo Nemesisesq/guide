@@ -1,7 +1,36 @@
 angular.module('step.three', [])
-  .controller('StepThreeController', function ($scope, PackageFactory) {
+  .controller('StepThreeController', function ($scope, PackageFactory, _, http) {
 
     $scope.package = PackageFactory.getPackage();
+    $scope.services = 'Hello world Im ready for services'.split(' ')
+    function constructServiceList() {
+      var services = _.map($scope.package.content, function (elem) {
+        return elem.channels.web.episodes.all_sources
+      })
+
+      debugger;
+
+      services = _.reduce(services, function (sum, n) {
+        return _.concat(sum, n)
+      })
+
+      services = _.uniqBy(services, function(elem) {
+        debugger;
+        if(elem.id) {
+
+          return elem.id
+        }
+
+        if(elem.guidebox_id) {
+          return elem.guidebox_id
+        }
+      } )
+
+      return services
+
+
+    }
+
     $scope.hardwareTotal = PackageFactory.totalHardwareCost();
     $scope.servicesTotal = PackageFactory.totalServiceCost();
     //$scope.packageTotal = getPackageTotal();
@@ -97,19 +126,55 @@ angular.module('step.three', [])
       //  }
       //}
     };
+
+    http.getHardware()
+      .then(function (data) {
+        $scope.hardware = data.results;
+      });
+
+    $scope.itemSelected = function (item) {
+      var hardwareColl = $scope.package.hardware;
+      var x = _.some(hardwareColl, 'url', item.url);
+      return x
+    };
+
+
+    $scope.addRemoveHardware = function (item) {
+      if (item.hasOwnProperty('selected')) {
+        delete item['selected']
+      }
+
+
+      var hardwareColl = $scope.package.hardware;
+      if (_.some(hardwareColl, 'url', item.url)) {
+        _.remove(hardwareColl, function(n){
+
+          return n.url == item.url
+
+        });
+
+      } else {
+        //item.selected = true;
+        hardwareColl.push(item);
+      }
+
+      PackageFactory.setPackage($scope.package)
+    };
+
     $scope.$watch(function () {
       return PackageFactory.getPackage()
     }, function () {
       $scope.package = PackageFactory.getPackage();
       $scope.$addProviderUrls();
+      $scope.services = constructServiceList();
     });
 
 
   })
   .directive('summaryBlock', function () {
     return {
-      templateUrl : 'features/journey_one/step-three/step-three.html',
-      controller : 'StepThreeController',
-      restrict :'E'
+      templateUrl: 'features/journey_one/step-three/step-three.html',
+      controller: 'StepThreeController',
+      restrict: 'E'
     }
   })

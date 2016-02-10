@@ -98,7 +98,7 @@ angular.module('ss.services')
 
       getHardware: function () {
         var deffered = $q.defer();
-        $http.get(ENDPOINT.url + '/api/hardware')
+        $http.get(ENDPOINT.url + '/api/hardware/')
           .success(function (data) {
             deffered.resolve(data)
           })
