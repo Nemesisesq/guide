@@ -1,7 +1,13 @@
 {
   "name": "streamsavvy_guide",
   "app_id": "",
-  
+  "proxies" : [
+  {
+    "path" : "http://titantv.com",
+    "proxyUrl" : "http://titantv.com"
+  }
+
+  ],
 
   "gulpStartupTasks": [
     "sass",

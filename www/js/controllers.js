@@ -50,10 +50,18 @@ angular.module('starter.controllers', [])
 //  $scope.chat = Chats.get($stateParams.chatId);
 //})
 //
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('AccountCtrl', function($scope, $http, ENDPOINT) {
+  $scope.getGuide = function () {
+    debugger;
+    $http.get('http://titantv.com/')
+      .then(function(data){
+        $http.post(ENDPOINT.url + '/guide_reciever/', data.data)
+          .then(function (data) {
+            console.log(data)
+
+          })
+      })
+  }
 
   $scope.loginForm = true;
 });

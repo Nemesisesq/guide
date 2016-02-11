@@ -1,14 +1,25 @@
 angular.module('starter.services', [])
 
 
-  .factory('GuideFactory', function ($http, ENDPOINT) {
+  .factory('GuideFactory', function ($http, ENDPOINT, $q) {
     return {
       getGuide: function () {
         debugger;
         return $http.get(ENDPOINT.url + '/guide/')
           .then(function (data) {
 
-            return data.data
+            if (_.isEmpty(data.data)) {
+              $http.get('http://titantv.com/')
+                .then(function (data) {
+                  $http.post(ENDPOINT.url + '/guide_reciever/', data.data)
+                    .then(function (data) {
+                      return data.data
+
+                    })
+                })
+            } else {
+              return data.data
+            }
 
           })
       },
@@ -27,6 +38,6 @@ angular.module('starter.services', [])
     return $window._; // assumes underscore has already been loaded on the page
   }])
 
-.factory('Fuse', function ($window) {
-  return $window.Fuse
-})
+  .factory('Fuse', function ($window) {
+    return $window.Fuse
+  })

@@ -1,47 +1,9 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-      <div id="register" ng-if="!loginForm">
-        <label class="item item-input item-floating-label">
-          <span class="input-label">First Name</span>
-          <input type="text" placeholder="First Name">
-        </label>
-        <label class="item item-input item-floating-label">
-          <span class="input-label">Last Name</span>
-          <input type="text" placeholder="Last Name">
-        </label>
-        <label class="item item-input item-floating-label">
-          <span class="input-label">Email</span>
-          <input type="text" placeholder="Email">
-        </label>
-        <button class="button button-full button-positive">
-          register
-        </button>
-      </div>
-      <div id="login" ng-if="loginForm" ng-controller="LoginController">
-        <label class="item item-input item-floating-label">
-          <span class="input-label">Username</span>
-          <input type="text" placeholder="Username"ng-model="data.username">
-        </label>
-        <label class="item item-input item-floating-label">
-          <span class="input-label">Password</span>
-          <input type="password" placeholder="Password" ng-model="data.password">
-        </label>
-        <button class="button button-full button-positive" ng-click="login(data)">
-          Login
-        </button>
-      {{ data }}
-      </div>
-      <div class="row"><div class="col col-50">
-        <button class="button button-clear button-positive" ng-click="loginForm=true">
-          login
-        </button>
-      </div>
-      <div class="col col-50">
-        <button class="button button-clear button-positive"ng-click="loginForm=false">
-          register
-        </button>
-      </div></div>
+      <ion-item>
+        <button ng-click="getGuide()">Get Guide</button>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
