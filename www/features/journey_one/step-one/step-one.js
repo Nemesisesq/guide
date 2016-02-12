@@ -1,5 +1,12 @@
 angular.module('step.one', [])
-  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, VIEW_WINDOWS, ENDPOINT) {
+  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, VIEW_WINDOWS, ENDPOINT, $window, $rootScope) {
+
+    if(_.isEmpty($window.sessionStorage.token)){
+      debugger
+      $rootScope.$broadcast('show_login',[])
+
+    }
+
     $scope.moveItem = function(item, fromIndex, toIndex) {
       //Move the item in the array
       $scope.items.splice(fromIndex, 1);

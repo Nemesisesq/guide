@@ -1,5 +1,5 @@
 angular.module('ss.login', [])
-  .controller('ModalController', function ($scope, http, $ionicModal, PackageFactory, $http, ENDPOINT) {
+  .controller('ModalController', function ($scope, http, $ionicModal, PackageFactory, $http, ENDPOINT, $timeout) {
 
 
     //$scope.login = 'Click Here to Login'
@@ -11,6 +11,7 @@ angular.module('ss.login', [])
       $scope.modal = modal;
     });
     $scope.openModal = function () {
+      debugger
       $scope.modal.show();
     };
     $scope.closeModal = function () {
@@ -38,7 +39,7 @@ angular.module('ss.login', [])
           console.log(data);
 
           $http.get(ENDPOINT.url + '/json-package/')
-            .then(function(data){
+            .then(function (data) {
               PackageFactory.setPackage(data.data)
             })
 
@@ -55,6 +56,24 @@ angular.module('ss.login', [])
 
         })
     };
+
+    $scope.$on('show_login', function (event, args) {
+      checkForModal()
+
+      function checkForModal() {
+        debugger
+        if ($scope.modal !== undefined) {
+
+          $scope.openModal()
+          return
+
+        } else {
+          $timeout(checkForModal,1000)
+
+        }
+      }
+
+    })
 
   });
 
