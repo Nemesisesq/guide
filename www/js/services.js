@@ -42,3 +42,14 @@ angular.module('starter.services', [])
   .factory('Fuse', function ($window) {
     return $window.Fuse
   })
+  .factory('ModalFactory', function($window, $rootScope){
+    return {
+      autoLogin : function(){
+        if(_.isEmpty($window.sessionStorage.token)){
+          debugger
+          $rootScope.$broadcast('show_login',[])
+
+        }
+      }
+    }
+  })

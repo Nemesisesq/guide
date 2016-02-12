@@ -41,10 +41,11 @@ angular.module('ss.login', [])
           $http.get(ENDPOINT.url + '/json-package/')
             .then(function (data) {
               PackageFactory.setPackage(data.data)
-            })
+              $scope.closeModal();
+
+            }).then($scope.closeModal )
 
           //$rootScope.logged_in = true;
-          $scope.closeModal();
           //growl.success('Login Successful', {
           //  onclose: function () {
           //

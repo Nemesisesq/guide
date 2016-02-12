@@ -53,21 +53,6 @@ angular.module('step.one', [])
         return total + n;
       })
 
-
-      //_.forEach($scope.directiveVW, function (window) {
-      //
-      //    if (content.viewingWindows !== undefined && content.viewingWindows[window.type] !== undefined) {
-      //
-      //        var window = content.viewingWindows[window.type];
-      //        if (window.channel !== undefined && window.channel.price !== undefined) {
-      //
-      //            total += window.channel.price;
-      //
-      //        }
-      //
-      //    }
-      //})
-
       content.totalCost = total
 
 

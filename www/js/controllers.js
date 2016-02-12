@@ -1,12 +1,11 @@
 angular.module('starter.controllers', [])
 
-  .controller('GuideController', function ($scope, GuideFactory, _) {
+  .controller('GuideController', function ($scope, GuideFactory, _, $window, $rootScope) {
     if(_.isEmpty($window.sessionStorage.token)){
       debugger
-      $rootScope.$broadcast('show_login',[])
+      $scope.$emit('show_login',[])
 
     }
-
     $scope.guide = []
     GuideFactory.getGuide()
       .then(function (data) {
@@ -58,11 +57,6 @@ angular.module('starter.controllers', [])
 //})
 //
 .controller('AccountCtrl', function($scope, $http, ENDPOINT) {
-  if(_.isEmpty($window.sessionStorage.token)){
-    debugger
-    $rootScope.$broadcast('show_login',[])
-
-  }
   $scope.getGuide = function () {
     debugger;
     $http.get('http://titantv.com/')

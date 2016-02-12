@@ -23,7 +23,8 @@ angular.module('streamsavvy', ['ionic',
     $resourceProvider.defaults.stripTrailingSlashes = false;
   }])
   .constant('ENDPOINT', {
-    url: 'http://localhost:8000'
+    //url: 'http://localhost:8000',
+    url: 'http://192.168.0.6:8000'
   })
 
   /*.constant('Endpoint', {
@@ -112,6 +113,8 @@ angular.module('streamsavvy', ['ionic',
         // org.apache.cordova.statusbar required
         StatusBar.styleDefault();
       }
+
+
     });
   })
 

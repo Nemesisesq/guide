@@ -19,9 +19,9 @@ angular.module('ss.services')
               data.results[0]
             )
           })
-          .error(function (e, code) {
+          .error(function (e) {
             deferred.reject(e);
-            $log.error(e, code)
+            $log.error(e)
           });
         return deferred.promise;
       },
@@ -49,9 +49,9 @@ angular.module('ss.services')
 
             deferred.resolve(data)
           })
-          .error(function (e, code) {
+          .error(function (e) {
             deferred.reject(e);
-            $log.error(e, code)
+            $log.error(e)
           });
         return deferred.promise;
 
@@ -66,9 +66,9 @@ angular.module('ss.services')
               data
             )
           })
-          .error(function (e, code) {
+          .error(function (e) {
             deferred.reject(e);
-            $log.error(e, code)
+            $log.error(e)
           });
         return deferred.promise;
       },
@@ -103,7 +103,7 @@ angular.module('ss.services')
             deffered.resolve(data)
           })
           .error(function (e) {
-            $log.error(e, code)
+            $log.error(e)
           });
         return deffered.promise;
 
