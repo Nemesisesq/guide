@@ -9,18 +9,19 @@ angular.module('starter.services', [])
           .then(function (data) {
 
             if (_.isEmpty(data.data)) {
-              $http.get('http://titantv.com/')
-                .then(function (data) {
-                  $http.post(ENDPOINT.url + '/guide_reciever/', data.data)
-                    .then(function (data) {
-                      return data.data
+              return $http.get('http://titantv.com/')
 
-                    })
-                })
             } else {
               return data.data
             }
+          })
+          .then(function (data) {
+            return $http.post(ENDPOINT.url + '/guide_reciever/', data.data)
 
+
+          })
+          .then(function (data) {
+            return data.data
           })
       },
 

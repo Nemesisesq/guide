@@ -4,6 +4,7 @@ angular.module('starter.controllers', [])
     $scope.guide = []
     GuideFactory.getGuide()
       .then(function (data) {
+        debugger;
         $scope.guide = data
 
       })
