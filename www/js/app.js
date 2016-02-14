@@ -18,13 +18,16 @@ angular.module('streamsavvy', ['ionic',
     'ngResource',
     'ion-sticky',
   ])
-  .config(['$resourceProvider', function ($resourceProvider) {
+  .config(['$resourceProvider', '$ionicConfigProvider', function ($resourceProvider, $ionicConfigProvider) {
     // Don't strip trailing slashes from calculated URLs
     $resourceProvider.defaults.stripTrailingSlashes = false;
+
+    $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
     //url: 'http://localhost:8000',
-    url: 'http://192.168.0.6:8000'
+    url: 'http://192.168.0.6:8000',
+    //url : 'http://10.8.149.70:8000'
   })
 
   /*.constant('Endpoint', {
@@ -207,6 +210,6 @@ angular.module('streamsavvy', ['ionic',
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/guide');
+    $urlRouterProvider.otherwise('/tab/dash');
 
   });

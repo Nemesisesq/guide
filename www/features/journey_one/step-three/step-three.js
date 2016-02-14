@@ -8,14 +8,14 @@ angular.module('step.three', [])
         return elem.channels.web.episodes.all_sources
       })
 
-      debugger;
+      //debugger;
 
       services = _.reduce(services, function (sum, n) {
         return _.concat(sum, n)
       })
 
       services = _.uniqBy(services, function(elem) {
-        debugger;
+        //debugger;
         if(elem.id) {
 
           return elem.id

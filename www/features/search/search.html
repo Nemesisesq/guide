@@ -1,19 +1,30 @@
 <!-- <input type="text" placeholder="Start typing" id="searchInput" ng-keydown="checkKeyDown($event)"
        class="form-control stacked-input-1" ng-model="searchText" ng-change="search()"/> -->
+<script id="suggestions-modal.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Results</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="suggestion in suggestions">
+          <div ng-click="addToSelectedShows(suggestion, $event)">
+            {{suggestion}}
+          </div>
 
-<div class="bar bar-header item-input-inset">
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-modal-view>
+</script>
+
+<div class="bar bar-header item-input-inset" style="overflow:visible; position:absolute">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
-    <input type="text" placeholder="Start typing" id="searchInput"
-                class="form-control stacked-input-1"
-                ng-model="searchText" ng-model-options="modelOptions"
-                uib-typeahead="suggestion.title for suggestion in search($viewValue)"
-                typeahead-loading="loading" typeahead-no-results="noResults"
-                typeahead-on-select="addToSelectedShows($item, $model, $label, $event)"></label>
-  <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
-  <div ng-show="noResults">
-    <i class="glyphicon glyphicon-remove"></i> No Results Found
-  </div>
+    <input type="text" placeholder="Start typing" id="searchInput" ng-model="searchText"
+           ng-model-options="{debounce : 1000 }"
+           class="form-control stacked-input-1" ng-change="search(searchText)"/>
+</div>
 </div>
 
 

@@ -6,7 +6,20 @@ function slingInProviders(suggestion) {
  */
 
 angular.module('search', [])
-  .controller('SearchController', function ($scope, $rootScope, $http, http, PackageFactory, _, Fuse, BANNED_CHANNELS, SLING_CHANNELS, SERVICE_PRICE_LIST, N, MAJOR_NETWORKS, ENDPOINT) {
+  .controller('SearchController', function ($scope,
+                                            $rootScope,
+                                            $http,
+                                            http,
+                                            PackageFactory,
+                                            _,
+                                            Fuse,
+                                            BANNED_CHANNELS,
+                                            SLING_CHANNELS,
+                                            SERVICE_PRICE_LIST,
+                                            N,
+                                            MAJOR_NETWORKS,
+                                            ENDPOINT,
+                                            $ionicModal) {
 
     function isLive(elem) {
       if (elem.source != 'hulu_free') {
@@ -35,10 +48,10 @@ angular.module('search', [])
 
     //TODO make this a constant in the angular app
     $http.get(ENDPOINT.url + '/netflixable/')
-        .then(function (data) {
+      .then(function (data) {
 
-            nShows = new Fuse(data.data, {threshold: .2});
-        })
+        nShows = new Fuse(data.data, {threshold: .2});
+      })
 
     function isOnNetFlix(show) {
 
@@ -78,23 +91,14 @@ angular.module('search', [])
     }
 
     $scope.search = function (val) {
+
+      debugger;
+
       if (val) {
         //$scope.suggestions = [];
         return $http.get(ENDPOINT.url + '/api/search/?q=' + val)
           .then(function (data) {
             debugger;
-
-            //var res = _.min(data.results, function (elem) {
-            //    return elem.title.length
-            //
-            //})
-
-            //var searchResult = matchCase($scope.searchText, res.title);
-
-            //if (_.includes(searchResult, $scope.searchText)) {
-            //    $scope.searchResult = searchResult;
-            //
-            //}
 
             var sorted = _.sortBy(data.data.results, function (elem) {
 
@@ -111,14 +115,15 @@ angular.module('search', [])
             }
 
             $scope.selectedIndex = -1
-          });
+          })
+          .then($scope.openSuggestionsModal)
       } else {
         $scope.suggestions = [];
         return "hello world"
       }
     };
 
-    $rootScope.addToSelectedShows = function (suggestion, model, label, event) {
+    $rootScope.addToSelectedShows = function (suggestion, event) {
 
 
       var ssPackage = PackageFactory.getPackage();
@@ -256,6 +261,7 @@ angular.module('search', [])
 
       $scope.searchText = '';
       $scope.suggestions = [];
+      $scope.closeSuggestionsModal();
 
 
     };
@@ -294,6 +300,34 @@ angular.module('search', [])
 
       }
     })
+
+    //  Search results Modal
+
+
+    $ionicModal.fromTemplateUrl('suggestions-modal.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function (modal) {
+      $scope.modal = modal;
+    });
+    $scope.openSuggestionsModal = function () {
+      $scope.modal.show();
+    };
+    $scope.closeSuggestionsModal = function () {
+      $scope.modal.hide();
+    };
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+      $scope.modal.remove();
+    });
+    // Execute action on hide modal
+    $scope.$on('modal.hidden', function () {
+      // Execute action
+    });
+    // Execute action on remove modal
+    $scope.$on('modal.removed', function () {
+      // Execute action
+    });
 
 
   })

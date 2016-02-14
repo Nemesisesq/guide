@@ -1,12 +1,12 @@
 
-
+<button ng-click="clearContent()">clear content</button>
 
 <ion-list  show-reorder="false" can-swipe="true">
   <ion-item class="item-divider">Shows</ion-item>
   <ion-item ng-repeat="content in package.content">
     <p>{{content.title}}</p>
 
-    <ion-option-button class="button-assertive">
+    <ion-option-button class="button-assertive" ng-click="delete(content)">
       delete
     </ion-option-button>
     <ion-reorder-button class="ion-navicon"
