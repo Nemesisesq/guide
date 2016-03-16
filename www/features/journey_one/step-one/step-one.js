@@ -1,8 +1,8 @@
 angular.module('step.one', [])
-  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, VIEW_WINDOWS, ENDPOINT, $window, $rootScope) {
+  .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, ENDPOINT, $window, $rootScope) {
 
     if(_.isEmpty($window.sessionStorage.token)){
-      debugger
+      //debugger
       $rootScope.$broadcast('show_login',[])
 
     }
@@ -26,18 +26,6 @@ angular.module('step.one', [])
 
       var total = 0
 
-      var chans = _.map(VIEW_WINDOWS, function (w) {
-
-
-        if (content.viewingWindows !== undefined && content.viewingWindows[w.type] !== undefined) {
-          var window = content.viewingWindows[w.type];
-          if (window.channel !== undefined) {
-
-            return window.channel;
-
-          }
-        }
-      })
 
       chans = _.uniq(_.compact(chans), function (c) {
         if (c.service !== undefined) {
@@ -89,44 +77,6 @@ angular.module('step.one', [])
     //
     //    return t
     //
-    //
-    //}
-
-
-    $scope.directiveVW = [
-
-      {
-        type: 'live',
-        headerText: 'Live Over the Air.',
-        toolTip: 'get your content as soon as it dropped.'
-
-
-      },
-      {
-        type: 'onDemand',
-        headerText: 'On Demand Subscription.',
-        toolTip: 'day/+ after live airing.'
-
-
-      },
-      {
-        type: 'fullseason',
-        headerText: 'Binge Watch Full Seasons',
-        toolTip: 'season behind.'
-
-
-      },
-      {
-        type: 'alacarte',
-        headerText: 'Watch Current Season or Episodes for a fee',
-        toolTip: 'day/+ after live airing with no committment'
-
-
-      },
-
-
-    ]
-
     $scope.popularShows = null;
 
     $http.get(ENDPOINT.url +'/api/popular-shows/')
@@ -150,7 +100,7 @@ angular.module('step.one', [])
     }
 
     $scope.delete = function (content) {
-      debugger;
+      //debugger;
       _.remove($scope.package.content, content);
       $scope.savePackage()
       PackageFactory.updatePackageChannels($scope)

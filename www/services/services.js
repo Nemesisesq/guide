@@ -28,7 +28,7 @@ app.run(function ($http, Fuse, N) {
 })
 
 
-app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,function ($http, $q, VIEW_WINDOWS, _, ENDPOINT) {
+app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT' ,function ($http, $q, _, ENDPOINT) {
   // ;
 
   var _package = {};
@@ -52,7 +52,7 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,f
     postPackage: function (ssPackage) {
 
       //debugger;
-      $http.post(ENDPOINT.url + '/json-package/', ssPackage);
+      $http.post(ENDPOINT.url + '/api/package/', ssPackage);
     },
 
     getPackage: function () {
@@ -72,41 +72,6 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,f
       }
 
 
-      return $q(function (resolve, reject) {
-
-        var chans = _.map(scope.package.content, function (elem) {
-          var x = []
-
-          _.forEach(VIEW_WINDOWS, function (w) {
-
-            if (elem.viewingWindows !== undefined && elem.viewingWindows[w.type] !== undefined) {
-              var window = elem.viewingWindows[w.type];
-
-              if (window.selected && window.channel !== undefined) {
-                x.push(window.channel)
-              }
-
-            }
-
-          })
-
-
-          return x
-        })
-
-        chans = _.flatten(chans)
-
-
-        chans = _.uniq(chans, function (elem) {
-
-          if (elem.service !== undefined) {
-            return elem.service
-          }
-          return elem.source
-        })
-
-        scope.package.providers = chans
-      })
 
 
     },
@@ -168,7 +133,7 @@ app.factory('PackageFactory', ['$http', '$q', 'VIEW_WINDOWS', '_', 'ENDPOINT' ,f
 
 
 app.run(function (PackageFactory, $http, http, $rootScope, ENDPOINT) {
-  $http.get(ENDPOINT.url + '/json-package/')
+  $http.get(ENDPOINT.url + '/api/package/')
     .then(function (data) {
       $rootScope.env = data.data.env
 

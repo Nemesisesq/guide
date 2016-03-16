@@ -11,7 +11,7 @@ angular.module('ss.login', [])
       $scope.modal = modal;
     });
     $scope.openModal = function () {
-      debugger
+      //debugger
       $scope.modal.show();
     };
     $scope.closeModal = function () {
@@ -38,7 +38,7 @@ angular.module('ss.login', [])
         .then(function (data) {
           console.log(data);
 
-          $http.get(ENDPOINT.url + '/json-package/')
+          $http.get(ENDPOINT.url + '/api/package/')
             .then(function (data) {
               PackageFactory.setPackage(data.data)
               $scope.closeModal();
@@ -62,7 +62,7 @@ angular.module('ss.login', [])
       checkForModal()
 
       function checkForModal() {
-        debugger
+        //debugger
         if ($scope.modal !== undefined) {
 
           $scope.openModal()

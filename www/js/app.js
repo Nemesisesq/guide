@@ -25,8 +25,9 @@ angular.module('streamsavvy', ['ionic',
     $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
+    url: 'http://ss-ux.heroukapp.com'
     //url: 'http://localhost:8000',
-    url: 'http://192.168.0.6:8000',
+    //url: 'http://192.168.0.6:8000',
     //url : 'http://10.8.149.70:8000'
   })
 
@@ -38,69 +39,6 @@ angular.module('streamsavvy', ['ionic',
   .constant('CONFIG', {
     'URL': location.origin,
   })
-  .constant('VIEW_WINDOWS', [
-    {type: 'live', headerText: 'Live Over the Air.', toolTip: 'get your content as soon as it dropped.'},
-    {type: 'onDemand', headerText: 'On Demand Subscription.', toolTip: 'day/+ after live airing.'},
-    {type: 'fullseason', headerText: 'Binge Watch Full Seasons', toolTip: 'season behind.'},
-    {
-      type: 'alacarte',
-      headerText: 'Watch Current Season or Episodes for a fee',
-      toolTip: 'day/+ after live airing with no committment'
-    }
-  ])
-  .constant('BANNED_CHANNELS', ['HBO Go',
-    'Guidebox',
-    'MSNBC',
-    'HBO',
-    'Dish',
-    'DirecTV',
-    'AT&T U-verse',
-    'FX',
-    'Xfinity',
-    'Showtime Anytime',
-    'STARZ Play'])
-
-  .constant('SERVICE_PRICE_LIST', [
-    {name: 'Netflix', price: 9.99},
-    {name: 'Hulu', price: 7.99},
-    {name: 'Amazon Prime', price: 8.25},
-    {name: 'HBO Now', price: 14.99},
-    {name: 'SlingTV', price: 20.00},
-    {name: 'Over The Air', price: 0.00},
-    {name: 'Showtime', price: 10.99},
-    {name: 'CBS All Access', price: 5.99},
-    {name: 'NBC App', price: 0.00},
-    {name: 'CW Seed', price: 0.00},
-    {name: 'PBS App', price: 0.00}
-  ])
-
-  .constant('MAJOR_NETWORKS', [
-    'ABC'
-  ])
-
-  .constant('SLING_CHANNELS', ['ESPN',
-    'ESPN2',
-    'AMC',
-    'Food Network',
-    'A & E',
-    'History',
-    'TNT',
-    'El Rey',
-    'HGTV',
-    'IFC',
-    'Disney Channel',
-    'Polaris +',
-    'Maker',
-    'TBS',
-    'Travel Channel',
-    'Adult Swim',
-    'CNN',
-    'H2',
-    'Cartoon Network',
-    'ABC Family',
-    'Lifetime',
-    'Galavision',
-    'Bloomberg Television'])
 
 
   .run(function ($ionicPlatform) {

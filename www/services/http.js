@@ -13,7 +13,7 @@ angular.module('ss.services')
       },
       getPackage: function () {
         var deferred = $q.defer();
-        $http.get(ENDPOINT.url + '/api/packageobj/')
+        $http.get(ENDPOINT.url + '/api/package/')
           .success(function (data) {
             deferred.resolve(
               data.results[0]
