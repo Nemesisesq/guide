@@ -1,15 +1,24 @@
 <ion-view view-title="Guide">
-  <ion-content>
+  <ion-content direction="xy">
 
-    <div ng-if="guide.length == 0 " class="center">
-      <ion-spinner></ion-spinner>
+    <!--<div ng-if="guide.length == 0 " class="center">-->
+      <!--&lt;!&ndash;<ion-spinner></ion-spinner>&ndash;&gt;-->
+    <!--</div>-->
+
+    <div class="row">
+      <div class="col-offset-10"></div>
+      <div class="hour">1:00</div>
+      <div class="hour">2:00</div>
+      <div class="hour">3:00</div>
+      <div class="hour">4:00</div>
+      <div class="hour">5:00</div>
     </div>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="show in guide" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
 
-       {{show.network[0]}}
-        {{show.channel[0]}}
-        {{show.shows[1].show}}
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="show in [1,2, 3]" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <div class="channel"> 2 </div>
+        <div class="show">A show Name or event will go here
+        1AM-1AM</div>
         <!--{{show.shows[0].desc}}-->
 
       </ion-item>

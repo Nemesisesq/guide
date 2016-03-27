@@ -3,7 +3,7 @@ angular.module('ss.login', [])
 
 
     //$scope.login = 'Click Here to Login'
-    $ionicModal.fromTemplateUrl('features/journey_one/modal/modal.html', {
+    $ionicModal.fromTemplateUrl('features/main/modal/modal.html', {
       scope: $scope,
       animation: 'slide-in-up'
 

@@ -9762,6 +9762,52 @@ a.button {
   align-items: center;
   margin-top: 50%; }
 
+.pane, .bar {
+  background-color: #4a4a4a; }
+
+.ss_search {
+  background-color: transparent;
+  border: none;
+  height: 65px; }
+  .ss_search ::-webkit-input-placeholder {
+    color: black;
+    font-size: 14px; }
+  .ss_search :-moz-placeholder {
+    /* Firefox 18- */
+    color: black; }
+  .ss_search ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: black; }
+  .ss_search :-ms-input-placeholder {
+    color: black; }
+  .ss_search .hun-height {
+    height: 100%;
+    background-color: white; }
+
+.has-subheader {
+  top: 100px; }
+
+.item.item-text-wrap.show-card {
+  min-height: 200px; }
+
+.ss_subheader {
+  height: 70px;
+  border: none; }
+
+.hour {
+  min-width: 200px; }
+
+.guide {
+  overflow-x: scroll; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.channel {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
 .modal-header {
   background-color: white; }
 

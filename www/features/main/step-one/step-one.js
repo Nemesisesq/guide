@@ -3,7 +3,7 @@ angular.module('step.one', [])
 
     if(_.isEmpty($window.sessionStorage.token)){
       //debugger
-      $rootScope.$broadcast('show_login',[])
+      //$rootScope.$broadcast('show_login',[])
 
     }
 
@@ -148,7 +148,7 @@ angular.module('step.one', [])
   })
   .directive('showsBlock', function () {
     return {
-      templateUrl: 'features/journey_one/step-one/step-one.html',
+      templateUrl: 'features/main/step-one/step-one.html',
 
       controller: 'StepOneController',
       restrict: 'E'

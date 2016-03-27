@@ -19,17 +19,18 @@
                  ng-keypress="$event.which === 13 && login(credentials)"/>
         </label>
 
-      <label class="item item-input item-floating-label">
-        <span class="input-label">Password</span>
-        <input type="password" class="form-control"
-               placeholder="Password"
-               ng-model="credentials.password"
-               ng-keypress="$event.which === 13 && login(credentials)"/>
-      </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input type="password" class="form-control"
+                 placeholder="Password"
+                 ng-model="credentials.password"
+                 ng-keypress="$event.which === 13 && login(credentials)"/>
+        </label>
 
       </div>
       <button ng-click=login(credentials) type="submit" value="Log In" name="subscribe"
-             class="button button-full button-positive">Login</button>
+              class="button button-full button-positive">Login
+      </button>
 
       <input ng-click='closeModal()' type="submit" value="closeModal" name="subscribe"
              class="button button-positive">
@@ -40,7 +41,8 @@
   </div>
 
 
-  </div></ion-modal-view>
+  </div>
+</ion-modal-view>
 
 
 

@@ -2,18 +2,24 @@ angular.module('starter.controllers', [])
 
   .controller('GuideController', function ($scope, GuideFactory, _, $window, $rootScope) {
     if(_.isEmpty($window.sessionStorage.token)){
-      debugger
+      //debugger
       $scope.$emit('show_login',[])
 
     }
     $scope.guide = []
-    GuideFactory.getGuide()
-      .then(function (data) {
-        debugger;
-        $scope.guide = data
-
-      })
+    //GuideFactory.getGuide()
+    //  .then(function (data) {
+    //    debugger;
+    //    $scope.guide = data
+    //
+    //  })
     $scope.hello = 'world'
+
+    $('ion-content').scroll(function(){
+      left = $(this).find('.scroll').position().left
+      $(this).find('.channel').css({'left' : -(left) + 10})
+
+    })
 
     $scope.$watch('guide', function () {
 

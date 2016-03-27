@@ -102,15 +102,15 @@ angular.module('streamsavvy', ['ionic',
           },
 
           'shows': {
-            templateUrl: 'features/journey_one/step-one/step-one.html',
+            templateUrl: 'features/main/step-one/step-one.html',
             controller: 'StepOneController'
           },
           'services': {
-            templateUrl: 'features/journey_one/step-two/step-two.html',
+            templateUrl: 'features/main/step-two/step-two.html',
             controller: 'StepTwoController'
           },
           'hardware': {
-            templateUrl: 'features/journey_one/step-three/step-three.html',
+            templateUrl: 'features/main/step-three/step-three.html',
             controller: 'StepThreeController'
           }
 

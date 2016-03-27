@@ -1,5 +1,3 @@
-<!-- <input type="text" placeholder="Start typing" id="searchInput" ng-keydown="checkKeyDown($event)"
-       class="form-control stacked-input-1" ng-model="searchText" ng-change="search()"/> -->
 <script id="suggestions-modal.html" type="text/ng-template">
   <ion-modal-view>
     <ion-header-bar>
@@ -18,13 +16,14 @@
   </ion-modal-view>
 </script>
 
-<div class="bar bar-header item-input-inset" style="overflow:visible; position:absolute">
-  <label class="item-input-wrapper">
+<div class="bar bar-header item-input-inset ss_search" style="overflow:visible; position:absolute">
+  <label class="item-input-wrapper hun-height">
     <i class="icon ion-ios-search placeholder-icon"></i>
-    <input type="text" placeholder="Start typing" id="searchInput" ng-model="searchText"
+    <input type="text" placeholder="Search for Your Shows" id="searchInput" ng-model="searchText"
            ng-model-options="{debounce : 1000 }"
            class="form-control stacked-input-1" ng-change="search(searchText)"/>
+  </label>
 </div>
-</div>
+
 
 

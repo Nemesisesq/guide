@@ -1,5 +1,5 @@
 <ion-view view-title="Dashboard">
-  <ion-header-bar class="bar-subheader">
+  <ion-header-bar class="bar-subheader ss_subheader">
     <search-shows></search-shows>
 
   </ion-header-bar>
@@ -11,14 +11,12 @@
     </div>
 
 
-    <shows-block></shows-block>
-    <!--<services-block></services-block>-->
-    <summary-block></summary-block>
-    <!--<ion-list>-->
-    <!--<ion-item ng-repeat="i in test ">-->
-    <!--{{ i }}-->
-    <!--</ion-item>-->
-    <!--</ion-list>-->
+    <div class="card" ng-repeat="n in [1, 2, 3]">
+      <div class="item item-text-wrap show-card">
+        <!--This is a basic Card which contains an item that has wrapping text.-->
+        {{_.range(3)}}
+      </div>
+    </div>
 
 
   </ion-content>
