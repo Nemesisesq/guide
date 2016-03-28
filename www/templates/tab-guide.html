@@ -2,11 +2,12 @@
   <ion-content direction="xy">
 
     <!--<div ng-if="guide.length == 0 " class="center">-->
-      <!--&lt;!&ndash;<ion-spinner></ion-spinner>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ion-spinner></ion-spinner>&ndash;&gt;-->
     <!--</div>-->
 
-    <div class="row">
-      <div class="col-offset-10"></div>
+    <div class="row showtimes">
+      <!--<div class="col-offset-10"></div>-->
+
       <div class="hour">1:00</div>
       <div class="hour">2:00</div>
       <div class="hour">3:00</div>
@@ -15,10 +16,17 @@
     </div>
     <ion-list>
 
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="show in [1,2, 3]" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <div class="channel"> 2 </div>
-        <div class="show">A show Name or event will go here
-        1AM-1AM</div>
+      <ion-item class="row-no-padding show-row" ng-repeat="show in [1,2, 3]"
+                type="item-text-wrap">
+        <div class="channel">
+          2
+        </div>
+        <div class="show" ng-repeat="n in [1, 2, 3 ,4]"
+             ng-class="{'first-show' : $index == 0, 'mins-60' : n % 2 == 0, 'mins-30' : n % 2 == 1 }">
+          <span
+            class="row show-title">A show Name or event will go here</span>
+          <div class="row show-time">1AM-1AM</div>
+        </div>
         <!--{{show.shows[0].desc}}-->
 
       </ion-item>

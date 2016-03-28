@@ -9762,6 +9762,11 @@ a.button {
   align-items: center;
   margin-top: 50%; }
 
+.item {
+  border: none;
+  border-bottom: solid #979797 2px;
+  background-color: transparent; }
+
 .pane, .bar {
   background-color: #4a4a4a; }
 
@@ -9781,8 +9786,7 @@ a.button {
   .ss_search :-ms-input-placeholder {
     color: black; }
   .ss_search .hun-height {
-    height: 100%;
-    background-color: white; }
+    height: 100%; }
 
 .has-subheader {
   top: 100px; }
@@ -9794,8 +9798,15 @@ a.button {
   height: 70px;
   border: none; }
 
-.hour {
-  min-width: 200px; }
+.showtimes {
+  padding-left: 50px; }
+  .item& {
+    border-bottom: none; }
+  .showtimes .hour {
+    min-width: 200px;
+    float: left;
+    text-align: center;
+    border: none; }
 
 .guide {
   overflow-x: scroll; }
@@ -9805,8 +9816,39 @@ a.button {
 
 .channel {
   position: absolute;
-  top: 10px;
-  left: 10px; }
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #4a4a4a;
+  border-right: solid #979797 2px; }
+
+.show {
+  float: left;
+  height: 100%;
+  font-size: 12px;
+  border-right: solid #979797 2px;
+  color: white;
+  white-space: nowrap; }
+  .show.mins-60 {
+    width: 200px;
+    border-bottom: solid blue 3px; }
+  .show.mins-30 {
+    width: 100px;
+    border-bottom: solid purple 3px; }
+
+.show-row {
+  height: 50px; }
+
+.first-show {
+  margin-left: 50px; }
+
+.show-title {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block; }
 
 .modal-header {
   background-color: white; }
