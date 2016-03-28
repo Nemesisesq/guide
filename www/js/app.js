@@ -17,6 +17,7 @@ angular.module('streamsavvy', ['ionic',
     'ui.bootstrap',
     'ngResource',
     'ion-sticky',
+  'ngCordova',
   ])
   .config(['$resourceProvider', '$ionicConfigProvider', function ($resourceProvider, $ionicConfigProvider) {
     // Don't strip trailing slashes from calculated URLs

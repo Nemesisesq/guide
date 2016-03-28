@@ -1,18 +1,29 @@
 angular.module('starter.controllers', [])
 
-  .controller('GuideController', function ($scope, GuideFactory, _, $window, $rootScope) {
+  .controller('GuideController', function ($scope, GuideFactory, _, $window, $rootScope, $q) {
     if (_.isEmpty($window.sessionStorage.token)) {
       //debugger
       $scope.$emit('show_login', [])
 
     }
     $scope.guide = []
-    //GuideFactory.getGuide()
-    //  .then(function (data) {
-    //    debugger;
-    //    $scope.guide = data
-    //
-    //  })
+
+
+
+
+
+    GuideFactory.getZipCode()
+      .then(function (data) {
+        debugger;
+        return data
+
+      })
+      .then(GuideFactory.getGuide)
+      .then(function(data){
+        debugger;
+        console.log(data)
+
+      })
     $scope.hello = 'world'
 
     $('ion-content').scroll(function () {
@@ -36,10 +47,10 @@ angular.module('starter.controllers', [])
   .controller('DashController', function ($scope, _) {
     $scope.hello = 'world';
 
-    var h = angular.element('.title').height()
+    var h = angular.element('.title').height();
     console.log(h)
 
-    $('.search').css('margin-top', h + "px")
+    $('.search').css('margin-top', h + "px");
 
     $scope.test = _.range(100)
 
