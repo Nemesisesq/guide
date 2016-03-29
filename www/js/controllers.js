@@ -14,13 +14,14 @@ angular.module('starter.controllers', [])
 
     GuideFactory.getZipCode()
       .then(function (data) {
-        debugger;
         return data
 
       })
       .then(GuideFactory.getGuide)
       .then(function(data){
         debugger;
+
+        $scope.grid = data.GridScheduleResult.GridChannels;
         console.log(data)
 
       })

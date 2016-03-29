@@ -26,8 +26,8 @@ angular.module('streamsavvy', ['ionic',
     $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
-    url: 'http://ss-ux.heroukapp.com'
-    //url: 'http://localhost:8000',
+    //url: 'http://ss-ux.heroukapp.com'
+    url: 'http://localhost:8000',
     //url: 'http://192.168.0.6:8000',
     //url : 'http://10.8.149.70:8000'
   })

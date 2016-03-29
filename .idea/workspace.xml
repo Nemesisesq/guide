@@ -2,72 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102eed9b-63d5-4c22-8c32-fd5f3faca297" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/doc/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/_util.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/alias.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/category.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/convert.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/fp.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/module.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/thru.jst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/benchmark.js/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/benchmark.js/benchmark.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/www/lib/angular/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/.bower.json" afterPath="$PROJECT_DIR$/www/lib/lodash/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/.travis.yml" afterPath="$PROJECT_DIR$/www/lib/lodash/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/CODE_OF_CONDUCT.md" afterPath="$PROJECT_DIR$/www/lib/lodash/CODE_OF_CONDUCT.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/LICENSE" afterPath="$PROJECT_DIR$/www/lib/lodash/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/README.md" afterPath="$PROJECT_DIR$/www/lib/lodash/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.min.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.min.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.min.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/dist/mapping.fp.js" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/mapping.fp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/doc/README.md" afterPath="$PROJECT_DIR$/www/lib/lodash/doc/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/fp/_baseConvert.js" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_baseConvert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/fp/_convertBrowser.js" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_convertBrowser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/fp/_mapping.js" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_mapping.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/common/minify.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/minify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-dist.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-dist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-modules.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-modules.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-dist.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-dist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-modules.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-modules.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/lodash.js" afterPath="$PROJECT_DIR$/www/lib/lodash/lodash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/package.json" afterPath="$PROJECT_DIR$/www/lib/lodash/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/perf/index.html" afterPath="$PROJECT_DIR$/www/lib/lodash/perf/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/perf/perf.js" afterPath="$PROJECT_DIR$/www/lib/lodash/perf/perf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/asset/test-ui.js" afterPath="$PROJECT_DIR$/www/lib/lodash/test/asset/test-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/index.html" afterPath="$PROJECT_DIR$/www/lib/lodash/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/remove.js" afterPath="$PROJECT_DIR$/www/lib/lodash/test/remove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/saucelabs.js" afterPath="$PROJECT_DIR$/www/lib/lodash/test/saucelabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/test-fp.js" afterPath="$PROJECT_DIR$/www/lib/lodash/test/test-fp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/test.js" afterPath="$PROJECT_DIR$/www/lib/lodash/test/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/test/underscore.html" afterPath="$PROJECT_DIR$/www/lib/lodash/test/underscore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/LICENSE" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/backbone.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/backbone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/collection.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/collection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/model.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/router.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/sync.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/sync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/view.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/LICENSE" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/arrays.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/arrays.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/objects.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/objects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/underscore.js" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-guide.html" afterPath="$PROJECT_DIR$/www/templates/tab-guide.html" />
     </list>
     <ignored path="streamsavvy_guide.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tab-guide.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tab-guide.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/tab-guide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.428571">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.21052632">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -111,18 +50,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="-26.464285">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64533335">
-              <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -142,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -202,12 +141,12 @@
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
         <option value="$PROJECT_DIR$/www/features/search/search.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
-        <option value="$PROJECT_DIR$/www/templates/tab-guide.html" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/www/js/services.js" />
+        <option value="$PROJECT_DIR$/www/templates/tab-guide.html" />
       </list>
     </option>
   </component>
@@ -479,7 +418,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="ind&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;app.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;app.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;step thr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;index&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;modal.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.html&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;interc&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;step-one&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;ionic.project&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-two&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;moda.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;http.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-one.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;step-one.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/filters/step-one.js&#10;controller&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/controllers.js&#10;step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
+    <property name="SearchEverywhereHistoryKey" value="app.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;ind&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;app.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;step thr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;index&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;modal.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.html&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;interc&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;step-one&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;ionic.project&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-two&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;moda.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;http.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-one.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;step-one.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/filters/step-one.js&#10;controller&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/controllers.js&#10;step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -947,26 +886,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-guide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.428571">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="-26.464285">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -974,15 +905,23 @@
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64533335">
-          <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21052632">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,57 +1,62 @@
 angular.module('starter.services', [])
 
 
-  .factory('GuideFactory', function ($http, ENDPOINT, $q, $cordovaGeolocation) {
+  .factory('GuideFactory', function ($http, ENDPOINT, $q, $cordovaGeolocation, $localstorage) {
 
-    var _zipCode = ''
     return {
       getGuide: function () {
-        debugger;
-        return $http.get(ENDPOINT.url + '/api/guide/' + _zipCode.long_name)
+        var _locInfo = $localstorage.getObject('locInfo');
+        //debugger;
+        return $http.get(ENDPOINT.url + '/api/guide/' + _locInfo.zipCode)
           .then(function (data) {
+            //debugger;
+            var re = new RegExp(_locInfo.city)
+            var res = _.find(data.data, function (o) {
 
+              return re.test(o.data.GridScheduleResult.Name)
+            })
 
+            return res.data
           })
 
       },
 
       getZipCode: function () {
+
+        if ($localstorage.get('locInfo')) {
+          return $q.when($localstorage.get('locInfo'))
+        }
         var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
         return $cordovaGeolocation
           .getCurrentPosition(posOptions)
-          .then(function (position ) {
-            //debugger;
-            var lat  = position.coords.latitude;
+          .then(function (position) {
+            var lat = position.coords.latitude;
             var long = position.coords.longitude;
 
-            return $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + long  + '&sensor=true' )
-              .then(function(res){
-                //debugger;
+            return $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + long + '&sensor=true')
+              .then(function (res) {
                 console.log(res.data)
 
-                  //debugger;
-                _zipCode = _.chain(res.data.results)
-                  .map(function (o) {
-                    //debugger;
-                    return o.address_components
-                  }).filter(function (o) {
-                  return _.some(o, function (x) {
-                    //debugger;
-                    return _.some(x.types, function(z){ return z == 'postal_code'})
-                  })
-                }).flatten()
-                  .uniqBy('long_name')
+                var locInfo = _.chain(res.data.results)
                   .find(function (o) {
-                    debugger
-                    var isPostalCode =  _.some(o.types, function(p) {
-                      debugger;
-                      return p == 'postal_code'
+                    return _.some(o.types, function (x) {
+                      return x === 'postal_code'
                     })
-                    return isPostalCode && o.long_name.length == 5
                   })
-                  .value()
-                return _zipCode
+                  .thru(function (o) {
+                    return {
+                      zipCode: o.address_components[0].long_name,
+                      city: o.address_components[1].long_name,
+                    }
+                  })
+                  .value();
+
+                $localstorage.setObject('locInfo', locInfo);
+
+                return locInfo
+
+
               })
           }, function (err) {
             //error
@@ -80,3 +85,20 @@ angular.module('starter.services', [])
       }
     }
   })
+
+  .factory('$localstorage', ['$window', function ($window) {
+    return {
+      set: function (key, value) {
+        $window.localStorage[key] = value;
+      },
+      get: function (key, defaultValue) {
+        return $window.localStorage[key] || defaultValue;
+      },
+      setObject: function (key, value) {
+        $window.localStorage[key] = JSON.stringify(value);
+      },
+      getObject: function (key) {
+        return JSON.parse($window.localStorage[key] || '{}');
+      }
+    }
+  }]);
