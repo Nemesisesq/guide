@@ -85,12 +85,13 @@
   .item& {
     border-bottom: none;
   }
-  padding-left: 50px;
+  padding-left: 48px;
   .hour {
-    min-width: 200px;
+    min-width: 60px * 3.5;
     float: left;
-    text-align: center;
+    text-align: left;
     border:none;
+    border-left: solid #979797 2px;
   }
 }
 
@@ -108,18 +109,22 @@
 }
 
 .channel {
+  color: white;
+  font-size: 9px;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 50px;
+  padding-left: 5px;
   //border-bottom: solid #979797 1px;
   background-color: #4a4a4a;
   border-right: solid #979797 2px;
 
 }
 
-.show {
+.airing{
+  @extend .show;
   float: left;
   height: 100%;
   font-size: 12px;
@@ -127,25 +132,28 @@
   //background-color: #4a4a4a;
   border-right: solid #979797 2px;
   color: white;
-  //overflow: hidden;
+  overflow: visible;
   white-space: nowrap;
 
   //text-overflow: ellipsis;
   &.mins-60 {
 
     //color: brown;
-    width: 200px;
+    //width: 200px;
     border-bottom: solid blue 3px;
   }
 
   &.mins-30 {
-    width: 100px;
+    //width: 100px;
     border-bottom: solid purple 3px;
   }
 }
 
 .show-row {
+  overflow-x: scroll;
+  white-space: nowrap;
   height: 50px;
+  min-width : 2000px;
 }
 
 .first-show {

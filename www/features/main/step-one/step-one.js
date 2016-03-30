@@ -2,8 +2,8 @@ angular.module('step.one', [])
   .controller('StepOneController', function ($scope, $http, $timeout, PackageFactory, ENDPOINT, $window, $rootScope) {
 
     if(_.isEmpty($window.sessionStorage.token)){
-      //debugger
-      //$rootScope.$broadcast('show_login',[])
+      debugger
+      $rootScope.$broadcast('show_login',[])
 
     }
 

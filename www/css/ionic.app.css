@@ -9279,7 +9279,7 @@ a.button {
   opacity: 1;
   display: none; }
 
-.show {
+.show, .airing {
   display: block; }
 
 .opacity-show {
@@ -9799,14 +9799,15 @@ a.button {
   border: none; }
 
 .showtimes {
-  padding-left: 50px; }
+  padding-left: 48px; }
   .item& {
     border-bottom: none; }
   .showtimes .hour {
-    min-width: 200px;
+    min-width: 210px;
     float: left;
-    text-align: center;
-    border: none; }
+    text-align: left;
+    border: none;
+    border-left: solid #979797 2px; }
 
 .guide {
   overflow-x: scroll; }
@@ -9815,30 +9816,35 @@ a.button {
   display: none; }
 
 .channel {
+  color: white;
+  font-size: 9px;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 50px;
+  padding-left: 5px;
   background-color: #4a4a4a;
   border-right: solid #979797 2px; }
 
-.show {
+.airing {
   float: left;
   height: 100%;
   font-size: 12px;
   border-right: solid #979797 2px;
   color: white;
+  overflow: visible;
   white-space: nowrap; }
-  .show.mins-60 {
-    width: 200px;
+  .airing.mins-60 {
     border-bottom: solid blue 3px; }
-  .show.mins-30 {
-    width: 100px;
+  .airing.mins-30 {
     border-bottom: solid purple 3px; }
 
 .show-row {
-  height: 50px; }
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 50px;
+  min-width: 2000px; }
 
 .first-show {
   margin-left: 50px; }

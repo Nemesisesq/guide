@@ -21,13 +21,15 @@
       <ion-item class="row-no-padding show-row" ng-repeat="show in grid"
                 type="item-text-wrap">
         <div class="channel">
-          2
+          <div>{{show.CallLetters}}</div>
+          <div>{{show.Channel}}</div>
         </div>
-        <div class="show" ng-repeat="n in [1, 2, 3 ,4]"
-             ng-class="{'first-show' : $index == 0, 'mins-60' : n % 2 == 0, 'mins-30' : n % 2 == 1 }">
+        <div class="airing" ng-repeat="airing in show.Airings"
+             ng-class="{'first-show' : $index == 0, 'mins-60' : $index % 2 == 0, 'mins-30' : $index % 2 == 1 }"
+        ng-style="{'width': dynamicWidth(airing.Duration)}">
           <span
-            class="row show-title">A show Name or event will go here</span>
-          <div class="row show-time">1AM-1AM</div>
+            class="row show-title">{{airing.Title}}</span>
+          <div class="row show-time">{{airing.Duration }} mins {{airing.Subcategory}}</div>
         </div>
         <!--{{show.shows[0].desc}}-->
 

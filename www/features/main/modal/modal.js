@@ -40,10 +40,10 @@ angular.module('ss.login', [])
 
           $http.get(ENDPOINT.url + '/api/package/')
             .then(function (data) {
-              PackageFactory.setPackage(data.data)
+              PackageFactory.setPackage(data.data);
               $scope.closeModal();
 
-            }).then($scope.closeModal )
+            }).then($scope.closeModal );
 
           //$rootScope.logged_in = true;
           //growl.success('Login Successful', {
@@ -59,14 +59,13 @@ angular.module('ss.login', [])
     };
 
     $scope.$on('show_login', function (event, args) {
-      checkForModal()
+      checkForModal();
 
       function checkForModal() {
         //debugger
         if ($scope.modal !== undefined) {
 
-          $scope.openModal()
-          return
+          $scope.openModal();
 
         } else {
           $timeout(checkForModal,1000)

@@ -6,7 +6,13 @@ angular.module('starter.controllers', [])
       $scope.$emit('show_login', [])
 
     }
-    $scope.guide = []
+
+    $scope.dynamicWidth = function(duration){
+
+      return duration*3.5;
+    };
+
+    $scope.guide = [];
 
 
 
@@ -19,7 +25,6 @@ angular.module('starter.controllers', [])
       })
       .then(GuideFactory.getGuide)
       .then(function(data){
-        debugger;
 
         $scope.grid = data.GridScheduleResult.GridChannels;
         console.log(data)
