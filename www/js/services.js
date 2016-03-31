@@ -14,7 +14,12 @@ angular.module('starter.services', [])
             var res = _.find(data.data, function (o) {
 
               return re.test(o.data.GridScheduleResult.Name)
-            })
+            });
+
+            //TODO remove this is a temporary fix
+            if (res == undefined) {
+              res = data.data[0]
+            }
 
             return res.data
           })

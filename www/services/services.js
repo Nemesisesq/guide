@@ -28,7 +28,7 @@ app.run(function ($http, Fuse, N) {
 })
 
 
-app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT' ,function ($http, $q, _, ENDPOINT) {
+app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', function ($http, $q, _, ENDPOINT) {
   // ;
 
   var _package = {};
@@ -52,7 +52,7 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT' ,function ($http, 
     postPackage: function (ssPackage) {
 
       //debugger;
-      $http.post(ENDPOINT.url + '/api/package/', ssPackage);
+      $http.put(ssPackage.url, ssPackage);
     },
 
     getPackage: function () {
@@ -70,8 +70,6 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT' ,function ($http, 
       if (scope.package.content.length == 0) {
         scope.package.providers = [];
       }
-
-
 
 
     },
@@ -132,22 +130,16 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT' ,function ($http, 
 }]);
 
 
-app.run(function (PackageFactory, $http, http, $rootScope, ENDPOINT) {
+app.run(function (PackageFactory, $http, ENDPOINT, http, $rootScope) {
   $http.get(ENDPOINT.url + '/api/package/')
     .then(function (data) {
-      $rootScope.env = data.data.env
-
-
+      //debugger
+      //$rootScope.env = data.data.env
 
       console.log(data);
 
-      if (data.data == "") {
-        http.getPackage()
-          .then(function (data) {
-            PackageFactory.setPackage(data)
-          })
-      } else {
-        PackageFactory.setPackage(data.data)
-      }
+      data = data.data.results[0]
+      PackageFactory.setPackage(data)
+
     })
 });

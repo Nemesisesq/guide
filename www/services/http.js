@@ -74,12 +74,13 @@ angular.module('ss.services')
       },
 
       login: function (credentials) {
+        debugger;
         var deffered = $q.defer();
         $http({
           method: 'POST',
           url: ENDPOINT.url + "/o/token/",
           params : {
-            client_id : 'ionic_test_application',
+            client_id : 'BOblxsGlr6mPWUjCQD5qIidya93DVkGKuKepLhFv',
             username : credentials.username,
             password : credentials.password,
             grant_type : 'password'

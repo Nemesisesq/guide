@@ -33,6 +33,8 @@ angular.module('ss.login', [])
     $scope.login = function (credentials) {
       //credentials.next = "/api/";
       //credentials.csrfmiddlewaretoken = $cookies.get('csrftoken');
+
+      debugger;
       credentials.submit = "Log in";
       http.login(credentials)
         .then(function (data) {

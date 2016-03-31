@@ -11,10 +11,9 @@
     </div>
 
 
-    <div class="card" ng-repeat="n in [1, 2, 3]">
+    <div class="card" ng-repeat="show in package.data.content">
       <div class="item item-text-wrap show-card">
-        <!--This is a basic Card which contains an item that has wrapping text.-->
-        {{_.range(3)}}
+        <img ng-src="{{ show.guidebox_data.artwork_304x171 }}">
       </div>
     </div>
 
