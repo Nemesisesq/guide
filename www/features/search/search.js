@@ -34,7 +34,7 @@ angular.module('search', [])
 
     $scope.search = function (val) {
 
-      //debugger;
+      debugger;
 
       if (val) {
         //$scope.suggestions = [];
@@ -86,7 +86,7 @@ angular.module('search', [])
         $scope.loading = false
       }
 
-
+      $scope.closeSuggestionsModal();
       $scope.searchText = '';
       $scope.suggestions = [];
 

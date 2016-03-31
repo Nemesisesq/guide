@@ -26,8 +26,8 @@ angular.module('streamsavvy', ['ionic',
     $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
-    //url: 'http://ss-ux.herokuapp.com'
-    url: 'http://localhost:8000',
+    url: 'http://ss-ux.herokuapp.com'
+    //url: 'http://localhost:8000',
     //url: 'http://192.168.0.6:8000',
     //url : 'http://10.8.149.70:8000'
   })
@@ -47,7 +47,7 @@ angular.module('streamsavvy', ['ionic',
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
       if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         cordova.plugins.Keyboard.disableScroll(true);
 
       }

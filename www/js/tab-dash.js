@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-  .controller('DashController', function ($scope,$window, PackageFactory, $http, ENDPOINT, _) {
+  .controller('DashController', function ($scope,$window, PackageFactory, $http, ENDPOINT, $rootScope, _) {
     $scope.hello = 'world';
 
     var h = angular.element('.title').height();
