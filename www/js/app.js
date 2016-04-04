@@ -7,6 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('streamsavvy', ['ionic',
     'starter.controllers',
+    'guide.directives',
     'starter.services',
     'ss.login',
     'ss.services',
@@ -17,7 +18,7 @@ angular.module('streamsavvy', ['ionic',
     'ui.bootstrap',
     'ngResource',
     'ion-sticky',
-  'ngCordova',
+    'ngCordova',
   ])
   .config(['$resourceProvider', '$ionicConfigProvider', function ($resourceProvider, $ionicConfigProvider) {
     // Don't strip trailing slashes from calculated URLs
@@ -26,8 +27,8 @@ angular.module('streamsavvy', ['ionic',
     $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
-    url: 'http://ss-ux.herokuapp.com'
-    //url: 'http://localhost:8000',
+    // url: 'http://ss-ux.herokuapp.com'
+    url: 'http://localhost:8000',
     //url: 'http://192.168.0.6:8000',
     //url : 'http://10.8.149.70:8000'
   })
@@ -100,22 +101,16 @@ angular.module('streamsavvy', ['ionic',
           'search': {
             templateUrl: 'features/search/search.html',
             controller: 'SearchController'
-          },
-
-          'shows': {
-            templateUrl: 'features/main/step-one/step-one.html',
-            controller: 'StepOneController'
-          },
-          'services': {
-            templateUrl: 'features/main/step-two/step-two.html',
-            controller: 'StepTwoController'
-          },
-          'hardware': {
-            templateUrl: 'features/main/step-three/step-three.html',
-            controller: 'StepThreeController'
           }
-
-
+        }
+      })
+      .state('tab.dash-detail', {
+        url: '/dash/:showID ',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/show-detail.html',
+            controller: 'ShowDetailController'
+          }
         }
       })
 
@@ -132,7 +127,7 @@ angular.module('streamsavvy', ['ionic',
       //    url: '/chats/:chatId',
       //    views: {
       //      'tab-chats': {
-      //        templateUrl: 'templates/chat-detail.html',
+      //        templateUrl: 'templates/show-detail.html',
       //        controller: 'ChatDetailCtrl'
       //      }
       //    }

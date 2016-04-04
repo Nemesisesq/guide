@@ -28,10 +28,10 @@ app.run(function ($http, Fuse, N) {
 })
 
 
-app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', function ($http, $q, _, ENDPOINT) {
+app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', '$localstorage', function ($http, $q, _, ENDPOINT, $localstorage) {
   // ;
 
-  var _package = {};
+  var _package = $localstorage.getObject('package') || {};
 
   var _env = ""
 
@@ -39,9 +39,18 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', function ($http, 
 
 
   return {
+
+    getShow: function(id){
+        var r = _.find(_package.data.content, function(o){
+          return o.guidebox_data.id == id;
+        })
+      return r
+    },
     setPackage: function (ssPackage) {
 
       _package = ssPackage;
+
+      $localstorage.setObject('package', _package)
 
       if (!_.isEmpty(ssPackage)) {
         this.postPackage(ssPackage)
@@ -62,67 +71,6 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', function ($http, 
     getSSTest: function () {
       // ;
       return _test;
-    },
-
-    updatePackageChannels: function (scope) {
-      //debugger;
-
-      if (scope.package.content.length == 0) {
-        scope.package.providers = [];
-      }
-
-
-    },
-
-    totalServiceCost: function () {
-
-
-      var t = 0;
-
-      var pkg = _package;
-      if (!_.isEmpty(pkg.content)) {
-
-        t = _.map(pkg.providers, function (elem) {
-          return elem.price;
-        })
-
-        t = _.compact(t);
-
-        t = _.reduce(t, function (total, n) {
-          return total + n
-        })
-      }
-
-      t = _.round(t, 2)
-
-      return t
-
-
-    },
-    totalHardwareCost: function () {
-
-
-      var t = 0;
-
-      var pkg = _package;
-
-
-      t = _.map(pkg.hardware, function (elem) {
-        return elem.retail_cost;
-      })
-
-      t = _.compact(t);
-
-      t = _.reduce(t, function (total, n) {
-        return total + n
-      })
-
-
-      t = _.round(t, 2)
-
-      return t
-
-
     }
   }
 

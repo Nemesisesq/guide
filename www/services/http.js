@@ -80,7 +80,7 @@ angular.module('ss.services')
           method: 'POST',
           url: ENDPOINT.url + "/o/token/",
           params : {
-            client_id : 'BOblxsGlr6mPWUjCQD5qIidya93DVkGKuKepLhFv',
+            client_id : 'A1ndR6olTwaiEoRujXqGIrOjLz7lRtZwViU5lLME',
             username : credentials.username,
             password : credentials.password,
             grant_type : 'password'

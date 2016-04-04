@@ -79,10 +79,15 @@ angular.module('starter.controllers', [])
   //  };
   //})
   //
-  //.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  //  $scope.chat = Chats.get($stateParams.chatId);
-  //})
-  //
+  .controller('ShowDetailController', function($scope, $stateParams, PackageFactory) {
+   // $scope.chat = Chats.get($stateParams.chatId);
+    var id = $stateParams.showID;
+
+    $scope.id = id
+
+    $scope.show = PackageFactory.getShow(id)
+  })
+
   .controller('AccountCtrl', function ($scope, $http, ENDPOINT) {
     $scope.getGuide = function () {
       debugger;
