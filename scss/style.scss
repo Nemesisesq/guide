@@ -73,6 +73,7 @@
 
 .item.item-text-wrap.show-card {
   min-height: 200px;
+  padding: 0;
 }
 
 .ss_subheader {
@@ -169,3 +170,33 @@
   display: block;
 }
 
+
+.show-detail, .dash, .content-list{
+  background-color: transparent;
+
+  img{
+    margin: 0 auto;
+    display: block;
+    //height : 200px;
+    width: 100vw;
+  }
+}
+.show-detail {
+  margin: 0;
+  border: none;
+
+  .item.item-text-wrap.show-card {
+    border-radius: 0;
+  }
+
+  &.card {
+    
+    border-radius: 0 ;
+  }
+}
+
+.content-list.card  {
+  max-width: 358px;
+  margin-left: auto;
+  margin-right: auto;
+}

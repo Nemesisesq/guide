@@ -9792,7 +9792,8 @@ a.button {
   top: 100px; }
 
 .item.item-text-wrap.show-card {
-  min-height: 200px; }
+  min-height: 200px;
+  padding: 0; }
 
 .ss_subheader {
   height: 70px;
@@ -9855,6 +9856,26 @@ a.button {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: block; }
+
+.show-detail, .dash, .content-list {
+  background-color: transparent; }
+  .show-detail img, .dash img, .content-list img {
+    margin: 0 auto;
+    display: block;
+    width: 100vw; }
+
+.show-detail {
+  margin: 0;
+  border: none; }
+  .show-detail .item.item-text-wrap.show-card {
+    border-radius: 0; }
+  .show-detail.card {
+    border-radius: 0; }
+
+.content-list.card {
+  max-width: 358px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .modal-header {
   background-color: white; }
