@@ -9876,6 +9876,8 @@ a.button {
   max-width: 358px;
   margin-left: auto;
   margin-right: auto; }
+  .content-list.card img {
+    width: 100%; }
 
 .modal-header {
   background-color: white; }
