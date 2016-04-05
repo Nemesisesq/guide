@@ -9825,7 +9825,7 @@ a.button {
   height: 100%;
   width: 50px;
   padding-left: 5px;
-  background-color: #4a4a4a;
+  background-color: #4a4a4as;
   border-right: solid #979797 2px; }
 
 .airing {
@@ -9866,7 +9866,8 @@ a.button {
 
 .show-detail {
   margin: 0;
-  border: none; }
+  border: none;
+  position: fixed; }
   .show-detail .item.item-text-wrap.show-card {
     border-radius: 0; }
   .show-detail.card {
@@ -9878,6 +9879,45 @@ a.button {
   margin-right: auto; }
   .content-list.card img {
     width: 100%; }
+
+.content-detail-page {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16.1px;
+  font-weight: 400;
+  overflow: scroll; }
+  .content-detail-page .ratings {
+    font-weight: 700; }
+  .content-detail-page .bold {
+    font-weight: 700;
+    margin-right: 5px; }
+  .content-detail-page .content-description {
+    line-height: 20px;
+    padding-bottom: 20px; }
+  .content-detail-page .row {
+    margin: 15px;
+    width: initial; }
+
+.detail-title {
+  font-size: 28px;
+  font-weight: 700; }
+
+.content-next {
+  height: 63px;
+  position: fixed;
+  bottom: 0;
+  background-color: #4a90e2;
+  z-index: 1000;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  align-content: center;
+  text-align: center;
+  line-height: 63px; }
+
+body {
+  font-family: "Avenir Next"; }
 
 .modal-header {
   background-color: white; }

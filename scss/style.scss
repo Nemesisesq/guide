@@ -34,7 +34,8 @@
   border: none;
   border-bottom: solid #979797 2px;
 
-  background-color: transparent}
+  background-color: transparent
+}
 
 .pane, .bar {
   background-color: #4a4a4a;
@@ -91,7 +92,7 @@
     min-width: 60px * 3.5;
     float: left;
     text-align: left;
-    border:none;
+    border: none;
     border-left: solid #979797 2px;
   }
 }
@@ -119,12 +120,12 @@
   width: 50px;
   padding-left: 5px;
   //border-bottom: solid #979797 1px;
-  background-color: #4a4a4a;
+  background-color: #4a4a4as;
   border-right: solid #979797 2px;
 
 }
 
-.airing{
+.airing {
   @extend .show;
   float: left;
   height: 100%;
@@ -154,7 +155,7 @@
   overflow-x: scroll;
   white-space: nowrap;
   height: 50px;
-  min-width : 2000px;
+  min-width: 2000px;
 }
 
 .first-show {
@@ -164,26 +165,27 @@
 .show-title {
   width: 100%;
   overflow: hidden;
-  white-space:nowrap;
+  white-space: nowrap;
   //-ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: block;
 }
 
-
-.show-detail, .dash, .content-list{
+.show-detail, .dash, .content-list {
   background-color: transparent;
 
-  img{
+  img {
     margin: 0 auto;
     display: block;
     //height : 200px;
     width: 100vw;
   }
 }
+
 .show-detail {
   margin: 0;
   border: none;
+  position: fixed;
 
   .item.item-text-wrap.show-card {
     border-radius: 0;
@@ -191,16 +193,73 @@
 
   &.card {
 
-    border-radius: 0 ;
+    border-radius: 0;
   }
 }
 
-.content-list.card  {
+.content-list.card {
   max-width: 358px;
   margin-left: auto;
   margin-right: auto;
 
-  img{
-    width:100%;
+  img {
+    width: 100%;
   }
+}
+
+.content-detail-page {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16.1px;
+  font-weight: 400;
+  overflow: scroll;
+
+  .ratings {
+
+    font-weight: 700;
+
+  }
+
+  .bold {
+    font-weight: 700;
+    margin-right: 5px;
+
+  }
+
+  .content-description {
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .row {
+    margin: 15px;
+    width: initial;
+  }
+}
+
+.detail-title {
+
+  font-size: 28px;
+  font-weight: 700;
+
+}
+
+.content-next {
+  height: 63px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(74, 144, 226);
+  z-index: 1000;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  align-content: center;
+  text-align: center;
+  line-height: 63px;
+
+}
+
+body {
+  font-family: "Avenir Next";
 }

@@ -7,15 +7,12 @@ angular.module('starter.controllers', [])
 
     }
 
-    $scope.dynamicWidth = function(duration){
+    $scope.dynamicWidth = function (duration) {
 
-      return duration*3.5;
+      return duration * 3.5;
     };
 
     $scope.guide = [];
-
-
-
 
 
     GuideFactory.getZipCode()
@@ -24,7 +21,7 @@ angular.module('starter.controllers', [])
 
       })
       .then(GuideFactory.getGuide)
-      .then(function(data){
+      .then(function (data) {
 
         $scope.grid = data.GridScheduleResult.GridChannels;
         console.log(data)
@@ -79,13 +76,20 @@ angular.module('starter.controllers', [])
   //  };
   //})
   //
-  .controller('ShowDetailController', function($scope, $stateParams, PackageFactory) {
-   // $scope.chat = Chats.get($stateParams.chatId);
+  .controller('ShowDetailController', function ($scope, $stateParams, PackageFactory, $timeout, $rootScope) {
+    // $rootScope.hideTabs = true;
+    $('.tab-nav').hide()
     var id = $stateParams.showID;
 
     $scope.id = id
 
     $scope.show = PackageFactory.getShow(id)
+
+    $timeout(function () {
+      var rest = $('ion-nav-view').height() - $('.show-detail').height() - $('content-next').height();
+      $('.content-detail-page').css({'margin-top': $('.show-detail').height(), 'height' : rest})
+
+    }, 100)
   })
 
   .controller('AccountCtrl', function ($scope, $http, ENDPOINT) {
