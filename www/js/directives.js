@@ -13,17 +13,29 @@ angular.module('guide.directives', [])
       }
     }
   }])
-  .directive('showCard', function () {
+  .directive('showDetail', function () {
 
     return {
       scope: {
         show: '='
       },
 
-      templateUrl: 'templates/show-detail.html',
+      templateUrl: 'templates/show-detail-description.html',
       link: function (scope, element, attrs, controller) {
 
       }
     }
 
   })
+.directive('serviceChoice', function(){
+  return {
+    scope : {
+      service: '='
+    }, 
+    
+    templateUrl : 'templates/choose-how-watch.html',
+    link: function (scope, element, attrs, controller) {
+      
+    }
+  }
+})

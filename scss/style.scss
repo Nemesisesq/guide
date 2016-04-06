@@ -120,7 +120,7 @@
   width: 50px;
   padding-left: 5px;
   //border-bottom: solid #979797 1px;
-  background-color: #4a4a4as;
+  background-color: #4a4a4a;
   border-right: solid #979797 2px;
 
 }
@@ -207,7 +207,7 @@
   }
 }
 
-.content-detail-page {
+.show-pane, .services-pane {
   color: #ffffff;
   font-size: 14px;
   line-height: 16.1px;
@@ -217,6 +217,20 @@
   .ratings {
 
     font-weight: 700;
+
+    img {
+      margin-right: 5px;
+    }
+
+    .col {
+      display: table;
+      width: initial;
+
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
 
   }
 
@@ -231,6 +245,9 @@
     padding-bottom: 20px;
   }
 
+}
+
+.show-pane {
   .row {
     margin: 15px;
     width: initial;
@@ -263,3 +280,17 @@
 body {
   font-family: "Avenir Next";
 }
+
+.services-pane {
+
+  .row {
+
+    flex-wrap: wrap;
+  }
+}
+
+.back-to-show {
+  background-color: #ed1c24;
+}
+
+

@@ -9825,7 +9825,7 @@ a.button {
   height: 100%;
   width: 50px;
   padding-left: 5px;
-  background-color: #4a4a4as;
+  background-color: #4a4a4a;
   border-right: solid #979797 2px; }
 
 .airing {
@@ -9880,23 +9880,32 @@ a.button {
   .content-list.card img {
     width: 100%; }
 
-.content-detail-page {
+.show-pane, .services-pane {
   color: #ffffff;
   font-size: 14px;
   line-height: 16.1px;
   font-weight: 400;
   overflow: scroll; }
-  .content-detail-page .ratings {
+  .show-pane .ratings, .services-pane .ratings {
     font-weight: 700; }
-  .content-detail-page .bold {
+    .show-pane .ratings img, .services-pane .ratings img {
+      margin-right: 5px; }
+    .show-pane .ratings .col, .services-pane .ratings .col {
+      display: table;
+      width: initial; }
+      .show-pane .ratings .col span, .services-pane .ratings .col span {
+        display: table-cell;
+        vertical-align: middle; }
+  .show-pane .bold, .services-pane .bold {
     font-weight: 700;
     margin-right: 5px; }
-  .content-detail-page .content-description {
+  .show-pane .content-description, .services-pane .content-description {
     line-height: 20px;
     padding-bottom: 20px; }
-  .content-detail-page .row {
-    margin: 15px;
-    width: initial; }
+
+.show-pane .row {
+  margin: 15px;
+  width: initial; }
 
 .detail-title {
   font-size: 28px;
@@ -9918,6 +9927,12 @@ a.button {
 
 body {
   font-family: "Avenir Next"; }
+
+.services-pane .row {
+  flex-wrap: wrap; }
+
+.back-to-show {
+  background-color: #ed1c24; }
 
 .modal-header {
   background-color: white; }
