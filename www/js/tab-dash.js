@@ -1,6 +1,20 @@
 angular.module('starter.controllers')
-  .controller('DashController', function ($scope,$window, PackageFactory, $http, ENDPOINT, $rootScope, _) {
+  .controller('DashController', function ($scope, $window, PackageFactory, $http, ENDPOINT, $rootScope, _, $timeout) {
     $scope.hello = 'world';
+
+    $scope.showWatch = function () {
+      debugger
+      $scope.howToWatch = true
+
+      $('.services-pane').show() 
+
+      $timeout(function () {
+        var rest = $('ion-nav-view').height() - $('.show-detail').height() - $('content-next').height();
+        $('.content-detail-page').css({'margin-top': $('.show-detail').height(), 'height' : rest})
+
+      }, 100)
+    }
+
 
     var h = angular.element('.title').height();
     console.log(h)
@@ -89,7 +103,7 @@ angular.module('starter.controllers')
     //
     $scope.popularShows = null;
 
-    $http.get(ENDPOINT.url + '/api/popular-shows/')
+    $http.get(ENDPOINT.url() + '/api/popular-shows/')
       .success(function (data) {
         $scope.popularShows = data.results;
         return data

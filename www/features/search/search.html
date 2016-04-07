@@ -2,6 +2,8 @@
   <ion-modal-view>
     <ion-header-bar>
       <h1 class="title">Results</h1>
+
+      <button ng-click="closeSuggestionsModal()" class="button button-clear button-positive">Close</button>
     </ion-header-bar>
     <ion-content>
       <ion-list>
@@ -16,7 +18,7 @@
   </ion-modal-view>
 </script>
 
-<div class="bar bar-header item-input-inset ss_search" style="overflow:visible; position:absolute">
+<div class="bar bar-header item-input-inset ss_search"  ng-hide="suggestionModalOpen" style="overflow:visible; position:absolute">
   <label class="item-input-wrapper hun-height">
     <i class="icon ion-ios-search placeholder-icon"></i>
     <input type="text" placeholder="Search for Your Shows" id="searchInput" ng-model="searchText"

@@ -13,7 +13,7 @@ angular.module('ss.services')
       },
       getPackage: function () {
         var deferred = $q.defer();
-        $http.get(ENDPOINT.url + '/api/package/')
+        $http.get(ENDPOINT.url() + '/api/package/')
           .success(function (data) {
             deferred.resolve(
               data.results[0]
@@ -27,7 +27,7 @@ angular.module('ss.services')
       },
       getRestPackage: function () {
         var deferred = $q.defer();
-        $http.get(ENDPOINT.url + '/api/package')
+        $http.get(ENDPOINT.url() + '/api/package')
           .success(function (data) {
             deferred.resolve(
               data.results[0]
@@ -75,31 +75,32 @@ angular.module('ss.services')
 
       login: function (credentials) {
         debugger;
-        var deffered = $q.defer();
-        $http({
-          method: 'POST',
-          url: ENDPOINT.url + "/o/token/",
-          params : {
-            client_id : 'A1ndR6olTwaiEoRujXqGIrOjLz7lRtZwViU5lLME',
-            username : credentials.username,
-            password : credentials.password,
-            grant_type : 'password'
-          }
-        })
-          .success(function (data) {
-            $window.sessionStorage.token = data.access_token;
-            deffered.resolve(data)
-          })
-          .error(function (data, status, headers, config) {
-            delete $window.sessionStorage.token;
-            //$log.error(e, code)
-          });
-        return deffered.promise;
+        // var deffered = $q.defer();
+       // return $http({
+       //    method: 'POST',
+       //    url: ENDPOINT.url() + "/o/token/",
+       //    params : {
+       //      client_id : 'A1ndR6olTwaiEoRujXqGIrOjLz7lRtZwViU5lLME',
+       //      username : credentials.username,
+       //      password : credentials.password,
+       //      grant_type : 'password'
+       //    }
+       //  })
+       //    .success(function (data) {
+       //      debugger;
+       //      $window.sessionStorage.token = data.access_token;
+       //      return data
+       //    })
+       //    .error(function (data, status, headers, config) {
+       //      delete $window.sessionStorage.token;
+       //      //$log.error(e, code)
+       //    });
+       //  // return deffered.promise;
       },
 
       getHardware: function () {
         var deffered = $q.defer();
-        $http.get(ENDPOINT.url + '/api/hardware/')
+        $http.get(ENDPOINT.url() + '/api/hardware/')
           .success(function (data) {
             deffered.resolve(data)
           })

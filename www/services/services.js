@@ -79,7 +79,7 @@ app.factory('PackageFactory', ['$http', '$q', '_', 'ENDPOINT', '$localstorage', 
 
 
 app.run(function (PackageFactory, $http, ENDPOINT, http, $rootScope) {
-  $http.get(ENDPOINT.url + '/api/package/')
+  $http.get(ENDPOINT.url() + '/api/package/')
     .then(function (data) {
       //debugger
       //$rootScope.env = data.data.env

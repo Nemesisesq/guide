@@ -38,7 +38,7 @@ angular.module('search', [])
 
       if (val) {
         //$scope.suggestions = [];
-        return $http.get(ENDPOINT.url + '/api/search/?q=' + val)
+        return $http.get(ENDPOINT.url() + '/api/search/?q=' + val)
           .then(function (data) {
             //debugger;
 
@@ -131,9 +131,11 @@ angular.module('search', [])
       $scope.modal = modal;
     });
     $scope.openSuggestionsModal = function () {
+      $rootScope.suggestionModalOpen = true
       $scope.modal.show();
     };
     $scope.closeSuggestionsModal = function () {
+      $rootScope.suggestionModalOpen = false
       $scope.modal.hide();
     };
     //Cleanup the modal when we're done with it!

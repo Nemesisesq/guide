@@ -4,7 +4,7 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<div class="content-detail-page show-pane">
+<div class="content-detail-page show-pane" ng-hide="howToWatch">
   <div class="row detail-title">
     The Blacklist
   </div>
@@ -40,7 +40,6 @@
     international terrorists -- starting with long-thought-dead terrorist Ranko Zamani. As the two pursue their
     quarry, Red forces the rookie profiler to think like a criminal to see the bigger picture.
   </div>
+<button ng-click="showWatch()" class="content-next" > {{howToWatch}}Next: Choose how to watch</button>
 </div>
 
-
-<div class="content-next"> Next: Choose how to watch</div>

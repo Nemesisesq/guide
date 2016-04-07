@@ -79,7 +79,7 @@ angular.module('step.one', [])
     //
     $scope.popularShows = null;
 
-    $http.get(ENDPOINT.url +'/api/popular-shows/')
+    $http.get(ENDPOINT.url() +'/api/popular-shows/')
       .success(function (data) {
         $scope.popularShows = data.results;
         return data

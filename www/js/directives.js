@@ -16,6 +16,9 @@ angular.module('guide.directives', [])
   .directive('showDetail', function () {
 
     return {
+      // require: '^DashController',
+      // transclude: true,
+      controller: 'DashController',
       scope: {
         show: '='
       },
@@ -28,14 +31,17 @@ angular.module('guide.directives', [])
 
   })
 .directive('serviceChoice', function(){
+
   return {
+    controller: 'DashController',
+    // transclude: true,
     scope : {
       service: '='
-    }, 
-    
+    },
+
     templateUrl : 'templates/choose-how-watch.html',
     link: function (scope, element, attrs, controller) {
-      
+
     }
   }
 })

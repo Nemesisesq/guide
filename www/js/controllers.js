@@ -97,7 +97,7 @@ angular.module('starter.controllers', [])
       debugger;
       $http.get('http://titantv.com/')
         .then(function (data) {
-          $http.post(ENDPOINT.url + '/guide_reciever/', data.data)
+          $http.post(ENDPOINT.url() + '/guide_reciever/', data.data)
             .then(function (data) {
               console.log(data)
 

@@ -21,14 +21,20 @@ angular.module('streamsavvy', ['ionic',
     'ngCordova',
   ])
   .config(['$resourceProvider', '$ionicConfigProvider', function ($resourceProvider, $ionicConfigProvider) {
-    // Don't strip trailing slashes from calculated URLs
+    // Don't strip trailing slashes from calculated URLs``
     $resourceProvider.defaults.stripTrailingSlashes = false;
 
     $ionicConfigProvider.tabs.position('bottom')
   }])
   .constant('ENDPOINT', {
-    // url: 'http://ss-ux.herokuapp.com'
-    url: 'http://localhost:8000',
+    url: function () {
+      if ((/localhost/).test(document.location.hostname)) {
+        return 'http://localhost:8000'
+      } else {
+        return 'http://ss-ux.herokuapp.com'
+
+      }
+    }
     //url: 'http://192.168.0.6:8000',
     //url : 'http://10.8.149.70:8000'
   })
@@ -110,9 +116,20 @@ angular.module('streamsavvy', ['ionic',
           'tab-dash': {
             templateUrl: 'templates/show-detail.html',
             controller: 'ShowDetailController'
-          }
+          },
+          
         }
       })
+      // .state('tab.dash-detail-desc', {
+      //
+      //   url: '/dash/:showID/description',
+      //   views: {
+      //     'dash-detail': {
+      //       templateUrl: 'templates/show-detail-description',
+      //       controler: 'DashController'
+      //     }
+      //   }
+      // })
 
       //.state('tab.chats', {
       //    url: '/chats',

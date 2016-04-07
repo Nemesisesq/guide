@@ -7,7 +7,7 @@ angular.module('starter.services', [])
       getGuide: function () {
         var _locInfo = $localstorage.getObject('locInfo');
         //debugger;
-        return $http.get(ENDPOINT.url + '/api/guide/' + _locInfo.zipCode)
+        return $http.get(ENDPOINT.url() + '/api/guide/' + _locInfo.zipCode)
           .then(function (data) {
             //debugger;
             var re = new RegExp(_locInfo.city)
