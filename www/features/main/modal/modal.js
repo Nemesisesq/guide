@@ -34,7 +34,6 @@ angular.module('ss.login', [])
         //credentials.next = "/api/";
         //credentials.csrfmiddlewaretoken = $cookies.get('csrftoken');
 
-        debugger;
         credentials.submit = "Log in";
 
 
@@ -48,14 +47,14 @@ angular.module('ss.login', [])
             grant_type: 'password'
           }
         }).then(function (data) {
-          debugger;
             console.log(data);
           $window.sessionStorage.token = data.data.access_token
 
             return $http.get(ENDPOINT.url() + '/api/package/')
+          }, function (error) {
+            alert('The user name or password was incorrect')
           })
           .then(function (data) {
-            debugger;
             PackageFactory.setPackage(data.data.results[0]);
             $scope.closeModal();
 

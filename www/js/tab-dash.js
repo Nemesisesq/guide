@@ -3,10 +3,10 @@ angular.module('starter.controllers')
     $scope.hello = 'world';
 
     $scope.showWatch = function () {
-      debugger
-      $scope.howToWatch = true
+      debugger;
+      $scope.howToWatch = true;
 
-      $('.services-pane').show() 
+      $('.services-pane').show() ;
 
       $timeout(function () {
         var rest = $('ion-nav-view').height() - $('.show-detail').height() - $('content-next').height();
@@ -38,9 +38,10 @@ angular.module('starter.controllers')
     };
 
     $scope.clearContent = function () {
+
       var pkg = PackageFactory.getPackage()
 
-      pkg.content = []
+      pkg.data.content = []
 
       PackageFactory.setPackage(pkg)
     }

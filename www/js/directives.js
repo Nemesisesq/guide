@@ -13,7 +13,7 @@ angular.module('guide.directives', [])
       }
     }
   }])
-  .directive('showDetail', function () {
+  .directive('showDetail', function ($http) {
 
     return {
       // require: '^DashController',
@@ -26,22 +26,33 @@ angular.module('guide.directives', [])
       templateUrl: 'templates/show-detail-description.html',
       link: function (scope, element, attrs, controller) {
 
+        if (scope.show.detail == undefined) {
+          $http.get(scope.show.url)
+            .then(function (res) {
+              debugger;
+              scope.show = res.data;
+              scope.s = scope.show.guidebox_data
+            })
+        }
+
+        scope.s = scope.show.guidebox_data
+
       }
     }
 
   })
-.directive('serviceChoice', function(){
+  .directive('serviceChoice', function () {
 
-  return {
-    controller: 'DashController',
-    // transclude: true,
-    scope : {
-      service: '='
-    },
+    return {
+      controller: 'DashController',
+      // transclude: true,
+      scope: {
+        service: '='
+      },
 
-    templateUrl : 'templates/choose-how-watch.html',
-    link: function (scope, element, attrs, controller) {
+      templateUrl: 'templates/choose-how-watch.html',
+      link: function (scope, element, attrs, controller) {
 
+      }
     }
-  }
-})
+  })

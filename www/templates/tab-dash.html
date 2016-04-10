@@ -7,6 +7,7 @@
     <div ng-controller="ModalController">
 
       <button ng-click="openModal()">Call Me Maybe</button>
+      <button ng-click="clearContent()">Clear</button>
 
     </div>
 
@@ -16,10 +17,9 @@
 
     <div clas="row">
       <div class="content-list card" ng-repeat="show in package.data.content"
-           ui-sref="tab.dash-detail({showID: show.guidebox_data.id})">
+           ui-sref="dash-detail.desc({showID: show.guidebox_data.id})">
         <div class="item item-text-wrap show-card">
           <img ng-src="{{ show.guidebox_data.artwork_304x171 }}">
-
         </div>
       </div>
     </div>

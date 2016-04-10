@@ -110,26 +110,29 @@ angular.module('streamsavvy', ['ionic',
           }
         }
       })
-      .state('tab.dash-detail', {
+      .state('dash-detail', {
         url: '/dash/:showID ',
+        templateUrl: 'templates/show-detail.html',
+        controller: 'ShowDetailController'
+      })
+      .state('dash-detail.desc', {
+        url: '/description',
         views: {
-          'tab-dash': {
-            templateUrl: 'templates/show-detail.html',
+          'detail': {
+            templateUrl: 'templates/show-detail-description.html',
             controller: 'ShowDetailController'
-          },
-          
+          }
         }
       })
-      // .state('tab.dash-detail-desc', {
-      //
-      //   url: '/dash/:showID/description',
-      //   views: {
-      //     'dash-detail': {
-      //       templateUrl: 'templates/show-detail-description',
-      //       controler: 'DashController'
-      //     }
-      //   }
-      // })
+      .state('dash-detail.services', {
+        url:'/services',
+        views : {
+          'detail': {
+            templateUrl: 'templates/choose-how-watch.html',
+            controller: 'ShowDetailController'
+          }
+        }
+      })
 
       //.state('tab.chats', {
       //    url: '/chats',

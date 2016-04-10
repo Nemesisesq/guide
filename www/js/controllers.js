@@ -76,20 +76,67 @@ angular.module('starter.controllers', [])
   //  };
   //})
   //
-  .controller('ShowDetailController', function ($scope, $stateParams, PackageFactory, $timeout, $rootScope) {
+  .controller('ShowDetailController', function ($scope, $stateParams, PackageFactory, $timeout, $http, $ionicNavBarDelegate, $ionicHistory) {
     // $rootScope.hideTabs = true;
-    $('.tab-nav').hide()
+    // $('.tab-nav').hide()
     var id = $stateParams.showID;
+
+    $ionicNavBarDelegate.showBackButton(true)
 
     $scope.id = id
 
     $scope.show = PackageFactory.getShow(id)
 
-    $timeout(function () {
-      var rest = $('ion-nav-view').height() - $('.show-detail').height() - $('content-next').height();
-      $('.content-detail-page').css({'margin-top': $('.show-detail').height(), 'height' : rest})
+    // debugger;
 
-    }, 100)
+    $timeout(function () {
+
+
+
+        var nav = $('ion-nav-view').height();
+      var showDetail = $('.show-detail').height();
+      var btn = $('.show-pane ~ button').height();
+      var header = $('.title').height()
+        var rest = nav - showDetail - btn -header
+      $('.content-detail-page').css({'margin-top': $('.show-detail').height(), 'height': rest})
+
+    }, 100);
+
+
+    if ($scope.show.detail == undefined) {
+      $http.get($scope.show.url)
+        .then(function (res) {
+          $scope.show = res.data;
+          $scope.s = $scope.show.guidebox_data
+        })
+    } else {
+
+      $scope.s = $scope.show.guidebox_data
+    }
+
+    $scope.live = []
+    $scope.onDemand = []
+    $scope.binge = []
+    $scope.payPerView = []
+    // debugger;
+
+    var channels = _.concat($scope.show.channels, $scope.show.guidebox_data.sources.web.episodes.all_sources)
+
+    _.forEach(channels ,function (elem) {
+      if(elem.is_over_the_air || elem.on_sling){
+        $scope.live.push(elem)
+
+      } else if(elem.name == "Netflix") {
+        $scope.binge.push(elem)
+      } else if(elem.type == 'purchase') {
+        $scope.payPerView.push(elem)
+
+      } else if(elem.type == 'subscription' || elem.display_name == 'Hulu') {
+        $scope.onDemand.push(elem)
+      }
+
+    })
+
   })
 
   .controller('AccountCtrl', function ($scope, $http, ENDPOINT) {
