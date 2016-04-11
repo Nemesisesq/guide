@@ -7,16 +7,16 @@
     <div class="row">
       LIVE
     </div>
-    <div class="row">
-      <div class="col col-33" ng-repeat="i in live">
+    <div class="row " >
+      <div class="col col-33 dim-service" ng-class="{'opaque' :chosenService(i)}" ng-repeat="i in live" ng-click="ToggleShowToPackage(i)">
         {{i.display_name || i.name}}
 
       </div>
       <!--<div class="col col-33">-->
-        <!--<img src="img/oTA.png" alt="">-->
+      <!--<img src="img/oTA.png" alt="">-->
       <!--</div>-->
       <!--<div class="col col-33">-->
-        <!--<img src="img/slingTv.png" alt="">-->
+      <!--<img src="img/slingTv.png" alt="">-->
       <!--</div>-->
     </div>
   </div>
@@ -24,8 +24,9 @@
     <div class="row">
       ON-DEMAND
     </div>
-    <div class="row">
-      <div class="col col-33" ng-repeat="i in onDemand">
+    <div class="row ">
+      <div class="col col-33 dim-service" ng-class="{'opaque' :chosenService(i)}" ng-repeat="i in onDemand"
+           ng-click="ToggleShowToPackage(i)">
         {{i.display_name}}
 
       </div>
@@ -38,7 +39,8 @@
       BINGE
     </div>
     <div class="row">
-      <div class="col col-33" ng-repeat="i in binge">
+      <div class="col col-33 dim-service" ng-class="{'opaque' :chosenService(i)}" ng-repeat=" i in binge"
+           ng-click="ToggleShowToPackage(i)">
         {{i.display_name}}
 
       </div>
@@ -48,10 +50,13 @@
     <div class="row">
       PAY PER EPISODE/ SEASON
     </div>
-    <div class="row"><div class="col col-33" ng-repeat="i in payPerView">
+    <div class="row">
+      <div class="col col-33 dim-service" ng-class="{'opaque' :chosenService(i)}" ng-repeat=" i in payPerView"
+           ng-click="ToggleShowToPackage(i)">
         {{i.display_name}}
 
-      </div></div>
+      </div>
+    </div>
   </div>
 
   <div class="content-next back-to-show" ui-sref="tab.dash">Add Popular Show</div>

@@ -283,6 +283,14 @@ body {
 
 .services-pane {
 
+  .dim-service {
+    opacity: .25;
+  }
+
+  .opaque {
+    opacity: 1;
+  }
+
   .row {
 
     flex-wrap: wrap;
@@ -292,5 +300,7 @@ body {
 .back-to-show {
   background-color: #ed1c24;
 }
+
+
 
 

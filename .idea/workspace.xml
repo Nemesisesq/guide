@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="102eed9b-63d5-4c22-8c32-fd5f3faca297" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/features/main/modal/modal.js" afterPath="$PROJECT_DIR$/www/features/main/modal/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/directives.js" afterPath="$PROJECT_DIR$/www/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/tab-dash.js" afterPath="$PROJECT_DIR$/www/js/tab-dash.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/choose-how-watch.html" afterPath="$PROJECT_DIR$/www/templates/choose-how-watch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/show-detail-description.html" afterPath="$PROJECT_DIR$/www/templates/show-detail-description.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/show-detail.html" afterPath="$PROJECT_DIR$/www/templates/show-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/www/templates/tab-dash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tabs.html" afterPath="$PROJECT_DIR$/www/templates/tabs.html" />
     </list>
     <ignored path="streamsavvy_guide.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+            <state relative-caret-position="1307">
+              <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -75,11 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="choose-how-watch.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="choose-how-watch.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/choose-how-watch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="290" column="14" selection-start-line="290" selection-start-column="14" selection-end-line="290" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -152,7 +156,6 @@
         <option value="$PROJECT_DIR$/www/templates/tab-guide.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/www/js/services.js" />
         <option value="$PROJECT_DIR$/www/features/main/step-one/step-one.js" />
         <option value="$PROJECT_DIR$/www/services/services.js" />
@@ -170,8 +173,9 @@
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
         <option value="$PROJECT_DIR$/www/templates/show-detail.html" />
-        <option value="$PROJECT_DIR$/www/templates/choose-how-watch.html" />
+        <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/choose-how-watch.html" />
       </list>
     </option>
   </component>
@@ -230,7 +234,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.File Status" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="tab-dash.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;app.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;modal.js &#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/main/modal/modal.js&#10;search&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;tab-da&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;inde&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/node_modules/bower/lib/commands/index.js&#10;app.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;ind&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;step thr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;index&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;modal.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.html&#10;interc&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;step-one&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;ionic.project&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-two&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;moda.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;http.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-one.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;step-one.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/filters/step-one.js&#10;controller&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/controllers.js&#10;step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
+    <property name="SearchEverywhereHistoryKey" value="style&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/scss/style.scss&#10;tab-dash.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;app.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;modal.js &#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/main/modal/modal.js&#10;search&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;app&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;tab-da&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;http&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;inde&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/node_modules/bower/lib/commands/index.js&#10;app.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;ind&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;app.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/app.js&#10;step thr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;index&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/index.html&#10;modal.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.html&#10;interc&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;step-one&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;ionic.project&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-two&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;moda.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;http.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/http.js&#10;step-one.j&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;step-one.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/filters/step-one.js&#10;controller&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/js/controllers.js&#10;step-thre&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;interce&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/services/interceptors.js&#10;modal&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/modal/modal.js&#10;search.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-threee&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;step&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;tab&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;search.h&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;sea&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.js&#10;step-one.&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.html&#10;steo&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-one/step-one.js&#10;.proje&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project&#10;step-three&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-three/step-three.js&#10;step-two.js&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/journey_one/step-two/step-two.js&#10;tab-das&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tab-dash.html&#10;tabs&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/templates/tabs.html&#10;search.html&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/www/features/search/search.html&#10;ionic.pr&#9;FILE&#9;file:///Users/Nem/streamsavvy_guide/ionic.project" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="172" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="181" />
@@ -502,6 +506,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.339498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -515,7 +520,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -740,6 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -762,14 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="292" column="27" selection-start-line="292" selection-start-column="27" selection-end-line="292" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,18 +933,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/choose-how-watch.html">
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="290" column="14" selection-start-line="290" selection-start-column="14" selection-end-line="290" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+        <state relative-caret-position="1307">
+          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/choose-how-watch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding />
         </state>
       </provider>

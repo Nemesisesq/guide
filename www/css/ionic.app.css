@@ -9928,6 +9928,12 @@ a.button {
 body {
   font-family: "Avenir Next"; }
 
+.services-pane .dim-service {
+  opacity: .25; }
+
+.services-pane .opaque {
+  opacity: 1; }
+
 .services-pane .row {
   flex-wrap: wrap; }
 

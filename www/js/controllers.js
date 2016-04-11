@@ -92,12 +92,11 @@ angular.module('starter.controllers', [])
     $timeout(function () {
 
 
-
-        var nav = $('ion-nav-view').height();
+      var nav = $('ion-nav-view').height();
       var showDetail = $('.show-detail').height();
       var btn = $('.show-pane ~ button').height();
       var header = $('.title').height()
-        var rest = nav - showDetail - btn -header
+      var rest = nav - showDetail - btn - header
       $('.content-detail-page').css({'margin-top': $('.show-detail').height(), 'height': rest})
 
     }, 100);
@@ -120,22 +119,47 @@ angular.module('starter.controllers', [])
     $scope.payPerView = []
     // debugger;
 
-    var channels = _.concat($scope.show.channels, $scope.show.guidebox_data.sources.web.episodes.all_sources)
+    var channels = _($scope.show.channels).concat($scope.show.guidebox_data.sources.web.episodes.all_sources).value()
 
-    _.forEach(channels ,function (elem) {
-      if(elem.is_over_the_air || elem.on_sling){
+    _.forEach(channels, function (elem) {
+      if (elem.is_over_the_air || elem.on_sling) {
         $scope.live.push(elem)
 
-      } else if(elem.name == "Netflix") {
+      } else if (elem.name == "Netflix") {
         $scope.binge.push(elem)
-      } else if(elem.type == 'purchase') {
+      } else if (elem.type == 'purchase') {
         $scope.payPerView.push(elem)
 
-      } else if(elem.type == 'subscription' || elem.display_name == 'Hulu') {
+      } else if (elem.type == 'subscription' || elem.display_name == 'Hulu') {
         $scope.onDemand.push(elem)
       }
 
     })
+
+    $scope.ToggleShowToPackage = function (i) {
+      // debugger;
+
+      var package = PackageFactory.getPackage()
+
+      _.some(package.data.services, i) ? _.pull(package.data.services, i) : package.data.services.push(i)
+
+      PackageFactory.setPackage(package)
+
+    }
+
+    $scope.chosenService = function (i) {
+
+      debugger
+      var package = PackageFactory.getPackage()
+
+      if (i) {
+
+        return _.some(package.data.services, i)
+      }
+
+      return false
+
+    }
 
   })
 
