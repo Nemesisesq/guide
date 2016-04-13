@@ -154,8 +154,12 @@
 .show-row {
   overflow-x: scroll;
   white-space: nowrap;
-  height: 50px;
+  height: 75px;
   min-width: 2000px;
+
+  .show-logo {
+    width: 40px;
+  }
 }
 
 .first-show {
@@ -252,6 +256,7 @@
     margin: 15px;
     width: initial;
   }
+
 }
 
 .detail-title {
@@ -300,7 +305,6 @@ body {
 .back-to-show {
   background-color: #ed1c24;
 }
-
 
 
 

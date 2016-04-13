@@ -9844,8 +9844,10 @@ a.button {
 .show-row {
   overflow-x: scroll;
   white-space: nowrap;
-  height: 50px;
+  height: 75px;
   min-width: 2000px; }
+  .show-row .show-logo {
+    width: 40px; }
 
 .first-show {
   margin-left: 50px; }

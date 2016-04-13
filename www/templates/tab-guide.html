@@ -21,8 +21,10 @@
       <ion-item class="row-no-padding show-row" ng-repeat="show in grid"
                 type="item-text-wrap">
         <div class="channel">
-          <div>{{show.CallLetters}}</div>
-          <div>{{show.Channel}}</div>
+          <div>{{ show.ChannelImages[0].ImageTitle}} </div>
+          <img class="show-logo" ng-src="{{ show.ChannelImages[0].ImageUrl}}" />
+          <!--<div>{{show.CallLetters}}</div>-->
+          <!--<div>{{show.Channel}}</div>-->
         </div>
         <div class="airing" ng-repeat="airing in show.Airings"
              ng-class="{'first-show' : $index == 0, 'mins-60' : $index % 2 == 0, 'mins-30' : $index % 2 == 1 }"
