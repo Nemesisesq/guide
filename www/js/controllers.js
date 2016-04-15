@@ -23,7 +23,7 @@ angular.module('starter.controllers', [])
       .then(GuideFactory.getGuide)
       .then(function (data) {
 
-        $scope.grid = _.concat(data[0].data.GridScheduleResult.GridChannels, data[1].data.GridScheduleResult.GridChannels);
+        $scope.grid = data.GridScheduleResult.GridChannels;
         console.log(data)
 
       })
@@ -149,7 +149,7 @@ angular.module('starter.controllers', [])
 
     $scope.chosenService = function (i) {
 
-      debugger
+      // debugger;
       var package = PackageFactory.getPackage()
 
       if (i) {
