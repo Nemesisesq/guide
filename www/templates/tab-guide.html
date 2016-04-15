@@ -18,7 +18,7 @@
     </div>
     <ion-list>
 
-      <ion-item class="row-no-padding show-row" ng-repeat="show in grid"
+      <ion-item class="row-no-padding show-row" ng-repeat="show in grid track by $index"
                 type="item-text-wrap">
         <div class="channel">
           <div>{{ show.ChannelImages[0].ImageTitle}} </div>

@@ -23,7 +23,7 @@ angular.module('starter.controllers', [])
       .then(GuideFactory.getGuide)
       .then(function (data) {
 
-        $scope.grid = data.GridScheduleResult.GridChannels;
+        $scope.grid = _.concat(data[0].data.GridScheduleResult.GridChannels, data[1].data.GridScheduleResult.GridChannels);
         console.log(data)
 
       })

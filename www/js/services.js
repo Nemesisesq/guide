@@ -18,10 +18,10 @@ angular.module('starter.services', [])
 
             //TODO remove this is a temporary fix
             if (res == undefined) {
-              res = data.data[0]
+              res = data.data
             }
 
-            return res.data
+            return res
           })
 
       },
@@ -92,7 +92,7 @@ angular.module('starter.services', [])
   })
 
   .factory('$localstorage', ['$window', function ($window) {
-    
+
     return {
       set: function (key, value) {
         $window.localStorage[key] = value;
