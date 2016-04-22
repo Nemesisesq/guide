@@ -10,24 +10,24 @@ angular.module('starter.services', [])
         return $http.get(ENDPOINT.url() + '/api/guide/' + _locInfo.zipCode)
           .then(function (data) {
             //debugger;
-            var re = new RegExp(_locInfo.city)
-            var res = _.find(data.data, function (o) {
+            // var re = new RegExp(_locInfo.city)
+            // var res = _.find(data.data, function (o) {
+            //
+            //   return re.test(o.data.GridScheduleResult.Name)
+            // });
+            //
+            // //TODO remove this is a temporary fix
+            // if (res == undefined) {
+            //   res = data.data[0]
+            // }
 
-              return re.test(o.data.GridScheduleResult.Name)
-            });
-
-            //TODO remove this is a temporary fix
-            if (res == undefined) {
-              res = data.data[0]
-            }
-
-            return res.data
+            return data
           })
 
       },
 
       getZipCode: function () {
-
+        // debugger;
         if ($localstorage.get('locInfo')) {
           return $q.when($localstorage.get('locInfo'))
         }
@@ -92,7 +92,7 @@ angular.module('starter.services', [])
   })
 
   .factory('$localstorage', ['$window', function ($window) {
-    
+
     return {
       set: function (key, value) {
         $window.localStorage[key] = value;

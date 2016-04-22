@@ -1,11 +1,15 @@
 angular.module('starter.controllers', [])
 
-  .controller('GuideController', function ($scope, GuideFactory, _, $window, $rootScope, $q) {
+  .controller('GuideController', function ($scope, GuideFactory, _, $window, PackageFactory) {
+
+    var grid_data = [];
+    var pkg = PackageFactory.getPackage();
     if (_.isEmpty($window.sessionStorage.token)) {
       //debugger
-      $scope.$emit('show_login', [])
+      $scope.$emit('show_login', []);
 
     }
+
 
     $scope.dynamicWidth = function (duration) {
 
@@ -13,6 +17,29 @@ angular.module('starter.controllers', [])
     };
 
     $scope.guide = [];
+
+    function sortGrid(channel_grid) {
+      $scope.grid = _(channel_grid)
+        .sort(function (elem) {
+
+          return checkInPackage(elem)
+
+        })
+        .reverse()
+        .value()
+    }
+
+    function checkInPackage(elem) {
+      var test = _.some(pkg.data.services, function (serv) {
+
+        return new RegExp(elem.ChannelImages[0].ImageTitle).test(serv.display_name) || new RegExp(serv.display_name).test(elem.ChannelImages[0].ImageTitle)
+
+      })
+      debugger
+      return test
+
+
+    }
 
 
     GuideFactory.getZipCode()
@@ -23,21 +50,28 @@ angular.module('starter.controllers', [])
       .then(GuideFactory.getGuide)
       .then(function (data) {
 
-        $scope.grid = data.GridScheduleResult.GridChannels;
-        console.log(data)
+        // debugger;
+        var channel_grid = _.reduce(data.data, function (n, sum) {
+
+          return _.concat(n.data.GridScheduleResult.GridChannels, sum.data.GridScheduleResult.GridChannels)
+        })
+
+        sortGrid(channel_grid)
+
 
       })
     $scope.hello = 'world'
 
-    $('ion-content').scroll(function () {
-      left = $(this).find('.scroll').position().left
-      if (left < 0) {
-        $(this).find('.channel').css({'left': -(left)})
-      } else {
-        $(this).find('.channel').css({'left': 0})
-      }
+    // $('ion-content').scroll(function () {
+    //   left = $(this).find('.scroll').position().left
+    //   if (left < 0) {
+    //     $(this).find('.channel').css({'left': -(left)})
+    //   } else {
+    //     $(this).find('.channel').css({'left': 0})
+    //   }
+    //
+    // })
 
-    })
 
     $scope.$watch('guide', function () {
 
@@ -165,7 +199,7 @@ angular.module('starter.controllers', [])
 
   .controller('AccountCtrl', function ($scope, $http, ENDPOINT) {
     $scope.getGuide = function () {
-      debugger;
+      // debugger;
       $http.get('http://titantv.com/')
         .then(function (data) {
           $http.post(ENDPOINT.url() + '/guide_reciever/', data.data)

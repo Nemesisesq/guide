@@ -9823,7 +9823,7 @@ a.button {
   top: 0;
   left: 0;
   height: 100%;
-  width: 50px;
+  width: 75px;
   padding-left: 5px;
   background-color: #4a4a4a;
   border-right: solid #979797 2px; }
@@ -9850,7 +9850,7 @@ a.button {
     width: 40px; }
 
 .first-show {
-  margin-left: 50px; }
+  margin-left: 75px; }
 
 .show-title {
   width: 100%;

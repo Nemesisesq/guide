@@ -53,6 +53,35 @@ angular.module('guide.directives', [])
       templateUrl: 'templates/choose-how-watch.html',
       link: function (scope, element, attrs, controller) {
 
+
+      }
+    }
+  })
+  .directive('offScreen', function ($compile, _, $document) {
+
+    return {
+
+      // restrict: 'A',
+      // transclude: 'element',
+      // mulitElement: true,
+
+      link: function (scope, element, attr, controller) {
+        // debugger;
+        // $window = angular.element($window);
+        // attr = attr
+        check_for_removal = function () {
+          // debugger;
+          if (element.offset().top < -75) {
+            element.hide()
+            $('ion-content').off
+          } else {
+            element.show()
+          }
+
+        }
+
+        $('ion-content').on('scroll', _.debounce(check_for_removal, 250))
+
       }
     }
   })
