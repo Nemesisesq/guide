@@ -67,25 +67,21 @@ angular.module('starter.controllers')
       left = $(this).find('.scroll').position().left;
       if (left < 0) {
         $('.channel').css({'left': -(left)})
-
       } else {
         $('.channel').css({'left': 0})
       }
-
       $('.channel').fadeIn()
-
-
     }, 100));
 
-    $('ion-content').scroll(function () {
+    $('ion-content').scroll(_.throttle(function () {
       // debugger;
       var ionContentScrollLeft = $(this).find('.scroll').position().left;
         if (lastScrollLeft != ionContentScrollLeft && ionContentScrollLeft < 0 ) {
-          $('.channel').hide()
+            $('.channel').hide();
 
           lastScrollLeft  = ionContentScrollLeft;
         }
-    });
+    }, 10));
 
 
     $scope.$watch('guide', function () {
