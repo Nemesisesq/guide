@@ -1,0 +1,182 @@
+{
+  "id": 2098,
+  "title": "Arrested Development",
+  "alternate_titles": [],
+  "status": "Continuing",
+  "type": "television",
+  "container_show": 0,
+  "first_aired": "2003-11-02",
+  "network": "Netflix",
+  "channels": [
+    {
+      "id": 202,
+      "name": "Netflix",
+      "short_name": "netflix",
+      "channel_type": "online",
+      "artwork_208x117": "http:\/\/static-api.guidebox.com\/041014\/thumbnails_small\/202-6845529615-208x117-channel.jpg",
+      "artwork_304x171": "http:\/\/static-api.guidebox.com\/041014\/thumbnails_medium\/202-2672268553-304x171-channel.jpg",
+      "artwork_448x252": "http:\/\/static-api.guidebox.com\/041014\/thumbnails_large\/202-2074253564-448x252-channel.jpg",
+      "artwork_608x342": "http:\/\/static-api.guidebox.com\/041014\/thumbnails_xlarge\/202-7402144111-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      },
+      "is_primary": 1
+    }
+  ],
+  "runtime": 30,
+  "genres": [
+    {
+      "id": 6,
+      "title": "Comedy"
+    }
+  ],
+  "tags": [
+    {
+      "id": 538,
+      "tag": "mockumentary"
+    },
+    {
+      "id": 1578,
+      "tag": "voice over narration"
+    },
+    {
+      "id": 1579,
+      "tag": "orange county california"
+    },
+    {
+      "id": 159,
+      "tag": "prison"
+    },
+    {
+      "id": 1580,
+      "tag": "sexual humor"
+    },
+    {
+      "id": 116,
+      "tag": "dysfunctional family"
+    },
+    {
+      "id": 1581,
+      "tag": "family relationship"
+    },
+    {
+      "id": 182,
+      "tag": "cult tv"
+    },
+    {
+      "id": 1582,
+      "tag": "fake documentary"
+    },
+    {
+      "id": 1682,
+      "tag": "magician"
+    }
+  ],
+  "cast": [
+    {
+      "id": 194651,
+      "name": "David Cross",
+      "character_name": "Tobias F\u00fcnke"
+    },
+    {
+      "id": 590909,
+      "name": "Portia de Rossi",
+      "character_name": "Lindsay Bluth F\u00fcnke"
+    },
+    {
+      "id": 90909,
+      "name": "Will Arnett",
+      "character_name": "Gob Bluth"
+    },
+    {
+      "id": 40137,
+      "name": "Tony Hale",
+      "character_name": "Byron \"Buster\" Bluth"
+    },
+    {
+      "id": 508426,
+      "name": "Jessica Walter",
+      "character_name": "Lucille Bluth"
+    },
+    {
+      "id": 182639,
+      "name": "Michael Cera",
+      "character_name": "George Michael Bluth"
+    },
+    {
+      "id": 410207,
+      "name": "Jeffrey Tambor",
+      "character_name": "George Bluth Sr."
+    },
+    {
+      "id": 465924,
+      "name": "Jason Bateman",
+      "character_name": "Michael Bluth"
+    },
+    {
+      "id": 140730,
+      "name": "Alia Shawkat",
+      "character_name": "Maeby F\u00fcnke"
+    },
+    {
+      "id": 123346,
+      "name": "Ron Howard",
+      "character_name": ""
+    },
+    {
+      "id": 287730,
+      "name": "Charlize Theron",
+      "character_name": "Rita"
+    }
+  ],
+  "overview": "Level-headed son Michael Bluth takes over family affairs after his father is imprisoned. But the rest of his spoiled, dysfunctional family are making his job unbearable.",
+  "air_day_of_week": "Sunday",
+  "air_time": "12:00",
+  "rating": "TV-14",
+  "imdb_id": "tt0367279",
+  "tvdb": 72173,
+  "themoviedb": 4589,
+  "freebase": "\/m\/02hct1",
+  "tv_com": "http:\/\/www.tv.com\/shows\/arrested-development\/",
+  "metacritic": "http:\/\/www.metacritic.com\/tv\/arrested-development",
+  "common_sense_media": null,
+  "wikipedia_id": 496020,
+  "tvrage": {
+    "tvrage_id": 2649,
+    "link": "http:\/\/www.tvrage.com\/shows\/id-2649"
+  },
+  "social": {
+    "facebook": {
+      "facebook_id": 108539909166109,
+      "link": "http:\/\/www.facebook.com\/pages\/Arrested-Development\/108539909166109"
+    },
+    "twitter": {
+      "twitter_id": 1250191058,
+      "link": "https:\/\/twitter.com\/arresteddev"
+    }
+  },
+  "fanart": "http:\/\/static-api.guidebox.com\/041014\/fanart\/2098-0-0-0-12261595016-118170870448-3708066843-tv.jpg",
+  "poster": "http:\/\/static-api.guidebox.com\/012915\/shows\/posters\/2098-2009495497-772692175-1680258769-600x855.jpg",
+  "banner": "http:\/\/static-api.guidebox.com\/041014\/banner\/2098-0-0-0-104852042750-19505240385-12621982714-tv.jpg",
+  "artwork_208x117": "http:\/\/static-api.guidebox.com\/091414\/thumbnails_small\/2098-4213483650-208x117-show-thumbnail.jpg",
+  "artwork_304x171": "http:\/\/static-api.guidebox.com\/091414\/thumbnails_medium\/2098-6882581105-304x171-show-thumbnail.jpg",
+  "artwork_448x252": "http:\/\/static-api.guidebox.com\/091414\/thumbnails_large\/2098-7307781619-448x252-show-thumbnail.jpg",
+  "artwork_608x342": "http:\/\/static-api.guidebox.com\/091414\/thumbnails_xlarge\/2098-677562375-608x342-show-thumbnail.jpg",
+  "url": "http:\/\/www.guidebox.com\/#!NETFLIX\/2098-Arrested-Development\/full-episodes"
+}

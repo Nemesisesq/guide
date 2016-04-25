@@ -1,5 +1,5 @@
 <ion-view view-title="Guide">
-  <ion-content direction="y">
+  <ion-content direction="xy">
 
     <!--<div ng-if="guide.length == 0 " class="center">-->
     <!--&lt;!&ndash;<ion-spinner></ion-spinner>&ndash;&gt;-->
@@ -16,9 +16,11 @@
       <div class="hour">4:00</div>
       <div class="hour">5:00</div>
     </div>
-    <ion-list>
+    <ion-list ng-repeat="grid in gridLists">
 
-      <ion-item class="row-no-padding show-row" collection-repeat="show in grid"
+
+
+      <ion-item class="row-no-padding show-row" ng-repeat="show in grid"
                 type="item-text-wrap" >
         <div class="channel">
           <div>{{ show.ChannelImages[0].ImageTitle}} </div>
