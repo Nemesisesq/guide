@@ -1,13 +1,13 @@
 <ion-view view-title="Dashboard">
   <ion-header-bar class="bar-subheader ss_subheader">
     <search-shows></search-shows>
-
+<button class="pull-right clear-content" ng-click="clearContent()">Clear</button>
   </ion-header-bar>
   <ion-content ion-sticky ion-sticky-class="positive" class="padding" has-header has-subheader>
-    <div ng-controller="ModalController">
+    <div ng-controller="ModalController" class="center" ng-if="!window.sessionStorage.token">
 
-      <button ng-click="openModal()">Call Me Maybe</button>
-      <button ng-click="clearContent()">Clear</button>
+      <button ng-click="openModal()" ng-if="loggedIn()">login</button>
+
 
     </div>
 

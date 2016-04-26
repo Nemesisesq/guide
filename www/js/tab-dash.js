@@ -1,6 +1,8 @@
 angular.module('starter.controllers')
   .controller('DashController', function ($scope, $window, PackageFactory, $http, ENDPOINT, $rootScope, _, $timeout) {
     $scope.hello = 'world';
+    
+   
 
     $scope.showWatch = function () {
       debugger;

@@ -1,7 +1,13 @@
 angular.module('ss.login', [])
   .controller('ModalController', function ($scope, http, $ionicModal, PackageFactory, $http, ENDPOINT, $timeout, $window) {
 
-
+      $scope.loggedIn = function () {
+        if (window.sessionStorage.token) {
+          return false;
+        } else {
+          return true;
+        }
+      }
       //$scope.login = 'Click Here to Login'
       $ionicModal.fromTemplateUrl('features/main/modal/modal.html', {
         scope: $scope,
