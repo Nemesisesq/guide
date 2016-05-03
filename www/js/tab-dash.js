@@ -1,8 +1,8 @@
 angular.module('starter.controllers')
   .controller('DashController', function ($scope, $window, PackageFactory, $http, ENDPOINT, $rootScope, _, $timeout) {
     $scope.hello = 'world';
-    
-   
+
+
 
     $scope.showWatch = function () {
       debugger;
@@ -28,8 +28,10 @@ angular.module('starter.controllers')
     //angular.element('')
 
     if (_.isEmpty($window.sessionStorage.token)) {
-      debugger
-      $rootScope.$broadcast('show_login', [])
+      debugger;
+      $timeout(function(){
+        $rootScope.$emit('show_login', [])
+      }, 500)
 
     }
 

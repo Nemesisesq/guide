@@ -17,13 +17,15 @@ $dark:                            #444 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
+$assertive : rgb(237, 28, 36);
+$coolGrey : rgb(154, 161, 161);
+$darkSkyBlueTwo: rgb(69, 167, 229);
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "style";
-@import "www/features/main/modal/modal";
+@import "modals";
 @import "www/features/search/search";
-
 
 
 

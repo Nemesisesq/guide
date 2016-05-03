@@ -5145,7 +5145,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
       var alreadyShrunk = self.isShrunkForKeyboard;
 
       var isModal = container.parentNode.classList.contains('modal');
-      // 680px is when the media query for 60% modal width kicks in
+      // 680px is when the media query for 60% login-modal width kicks in
       var isInsetModal = isModal && window.innerWidth >= 680;
 
      /*
@@ -5253,7 +5253,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
     container.addEventListener('scrollChildIntoView', self.scrollChildIntoView);
 
     // Listen on document because container may not have had the last
-    // keyboardActiveElement, for example after closing a modal with a focused
+    // keyboardActiveElement, for example after closing a login-modal with a focused
     // input and returning to a previously resized scroll view in an ion-content.
     // Since we can only resize scroll views that are currently visible, just resize
     // the current scroll view when the keyboard is closed.
@@ -7329,7 +7329,7 @@ ionic.scroll = {
 
         var isModal = container.parentNode.classList.contains('modal');
         var isPopover = container.parentNode.classList.contains('popover');
-        // 680px is when the media query for 60% modal width kicks in
+        // 680px is when the media query for 60% login-modal width kicks in
         var isInsetModal = isModal && window.innerWidth >= 680;
 
        /*
@@ -7510,7 +7510,7 @@ ionic.scroll = {
       container.addEventListener(ionic.EVENTS.touchmove, self.handleTouchMove);
 
       // Listen on document because container may not have had the last
-      // keyboardActiveElement, for example after closing a modal with a focused
+      // keyboardActiveElement, for example after closing a login-modal with a focused
       // input and returning to a previously resized scroll view in an ion-content.
       // Since we can only resize scroll views that are currently visible, just resize
       // the current scroll view when the keyboard is closed.

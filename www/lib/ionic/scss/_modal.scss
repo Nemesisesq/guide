@@ -31,7 +31,7 @@
 }
 
 @media (min-width: $modal-inset-mode-break-point) {
-  // inset mode is when the modal doesn't fill the entire
+  // inset mode is when the login-modal doesn't fill the entire
   // display but instead is centered within a large display
   .modal {
     top: $modal-inset-mode-top;
@@ -84,7 +84,7 @@
   }
 }
 
-// disable clicks on all but the modal
+// disable clicks on all but the login-modal
 .modal-open {
   pointer-events: none;
 
@@ -92,7 +92,7 @@
   .modal-backdrop {
     pointer-events: auto;
   }
-  // prevent clicks on modal when loading overlay is active though
+  // prevent clicks on login-modal when loading overlay is active though
   &.loading-active {
     .modal,
     .modal-backdrop {

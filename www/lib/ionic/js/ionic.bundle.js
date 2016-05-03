@@ -5152,7 +5152,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
       var alreadyShrunk = self.isShrunkForKeyboard;
 
       var isModal = container.parentNode.classList.contains('modal');
-      // 680px is when the media query for 60% modal width kicks in
+      // 680px is when the media query for 60% login-modal width kicks in
       var isInsetModal = isModal && window.innerWidth >= 680;
 
      /*
@@ -5260,7 +5260,7 @@ ionic.views.Scroll = ionic.views.View.inherit({
     container.addEventListener('scrollChildIntoView', self.scrollChildIntoView);
 
     // Listen on document because container may not have had the last
-    // keyboardActiveElement, for example after closing a modal with a focused
+    // keyboardActiveElement, for example after closing a login-modal with a focused
     // input and returning to a previously resized scroll view in an ion-content.
     // Since we can only resize scroll views that are currently visible, just resize
     // the current scroll view when the keyboard is closed.
@@ -7336,7 +7336,7 @@ ionic.scroll = {
 
         var isModal = container.parentNode.classList.contains('modal');
         var isPopover = container.parentNode.classList.contains('popover');
-        // 680px is when the media query for 60% modal width kicks in
+        // 680px is when the media query for 60% login-modal width kicks in
         var isInsetModal = isModal && window.innerWidth >= 680;
 
        /*
@@ -7517,7 +7517,7 @@ ionic.scroll = {
       container.addEventListener(ionic.EVENTS.touchmove, self.handleTouchMove);
 
       // Listen on document because container may not have had the last
-      // keyboardActiveElement, for example after closing a modal with a focused
+      // keyboardActiveElement, for example after closing a login-modal with a focused
       // input and returning to a previously resized scroll view in an ion-content.
       // Since we can only resize scroll views that are currently visible, just resize
       // the current scroll view when the keyboard is closed.
@@ -52812,19 +52812,19 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name ionicModal#initialize
-     * @description Creates a new modal controller instance.
+     * @description Creates a new login-modal controller instance.
      * @param {object} options An options object with the following properties:
      *  - `{object=}` `scope` The scope to be a child of.
      *    Default: creates a child of $rootScope.
      *  - `{string=}` `animation` The animation to show & hide with.
      *    Default: 'slide-in-up'
      *  - `{boolean=}` `focusFirstInput` Whether to autofocus the first input of
-     *    the modal when shown. Will only show the keyboard on iOS, to force the keyboard to show
+     *    the login-modal when shown. Will only show the keyboard on iOS, to force the keyboard to show
      *    on Android, please use the [Ionic keyboard plugin](https://github.com/driftyco/ionic-plugin-keyboard#keyboardshow).
      *    Default: false.
-     *  - `{boolean=}` `backdropClickToClose` Whether to close the modal on clicking the backdrop.
+     *  - `{boolean=}` `backdropClickToClose` Whether to close the login-modal on clicking the backdrop.
      *    Default: true.
-     *  - `{boolean=}` `hardwareBackButtonClose` Whether the modal can be closed using the hardware
+     *  - `{boolean=}` `hardwareBackButtonClose` Whether the login-modal can be closed using the hardware
      *    back button on Android and similar devices.  Default: true.
      */
     initialize: function(opts) {
@@ -52835,8 +52835,8 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name ionicModal#show
-     * @description Show this modal instance.
-     * @returns {promise} A promise which is resolved when the modal is finished animating in.
+     * @description Show this login-modal instance.
+     * @returns {promise} A promise which is resolved when the login-modal is finished animating in.
      */
     show: function(target) {
       var self = this;
@@ -52864,7 +52864,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
         $ionicBody.append(self.el);
       }
 
-      // if modal was closed while the keyboard was up, reset scroll view on
+      // if login-modal was closed while the keyboard was up, reset scroll view on
       // next show since we can only resize it once it's visible
       var scrollCtrl = modalEl.data('$$ionicScrollController');
       scrollCtrl && scrollCtrl.resize();
@@ -52921,8 +52921,8 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name ionicModal#hide
-     * @description Hide this modal instance.
-     * @returns {promise} A promise which is resolved when the modal is finished animating out.
+     * @description Hide this login-modal instance.
+     * @returns {promise} A promise which is resolved when the login-modal is finished animating out.
      */
     hide: function() {
       var self = this;
@@ -52963,8 +52963,8 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name ionicModal#remove
-     * @description Remove this modal instance from the DOM and clean up.
-     * @returns {promise} A promise which is resolved when the modal is finished animating out.
+     * @description Remove this login-modal instance from the DOM and clean up.
+     * @returns {promise} A promise which is resolved when the login-modal is finished animating out.
      */
     remove: function() {
       var self = this;
@@ -52979,7 +52979,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name ionicModal#isShown
-     * @returns boolean Whether this modal is currently shown.
+     * @returns boolean Whether this login-modal is currently shown.
      */
     isShown: function() {
       return !!this._isShown;
@@ -52987,7 +52987,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
   });
 
   var createModal = function(templateString, options) {
-    // Create a new scope for the modal
+    // Create a new scope for the login-modal
     var scope = options.scope && options.scope.$new() || $rootScope.$new(true);
 
     options.viewType = options.viewType || 'modal';
@@ -53041,7 +53041,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
     /**
      * @ngdoc method
      * @name $ionicModal#fromTemplate
-     * @param {string} templateString The template string to use as the modal's
+     * @param {string} templateString The template string to use as the login-modal's
      * content.
      * @param {object} options Options to be passed {@link ionic.controller:ionicModal#initialize ionicModal#initialize} method.
      * @returns {object} An instance of an {@link ionic.controller:ionicModal}
@@ -58788,7 +58788,7 @@ function($scope, $element, $attrs, $compile, $rootScope) {
     var modalCtrl = $element.inheritedData('$ionModalController');
     navViewCtrl = $element.inheritedData('$ionNavViewController');
 
-    // don't bother if inside a modal or there's no parent navView
+    // don't bother if inside a login-modal or there's no parent navView
     if (!navViewCtrl || modalCtrl) return;
 
     // add listeners for when this view changes
@@ -61724,9 +61724,9 @@ IonicModule
     transclude: true,
     replace: true,
     controller: [function() {}],
-    template: '<div class="modal-backdrop">' +
-                '<div class="modal-backdrop-bg"></div>' +
-                '<div class="modal-wrapper" ng-transclude></div>' +
+    template: '<div class="login-modal-backdrop">' +
+                '<div class="login-modal-backdrop-bg"></div>' +
+                '<div class="login-modal-wrapper" ng-transclude></div>' +
               '</div>'
   };
 }]);

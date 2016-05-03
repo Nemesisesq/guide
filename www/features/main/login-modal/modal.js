@@ -1,5 +1,5 @@
 angular.module('ss.login', [])
-  .controller('ModalController', function ($scope, http, $ionicModal, PackageFactory, $http, ENDPOINT, $timeout, $window) {
+  .controller('ModalController', function ($scope, $rootScope, http, $ionicModal, PackageFactory, $http, ENDPOINT, $timeout, $window) {
 
       $scope.loggedIn = function () {
         if (window.sessionStorage.token) {
@@ -7,9 +7,9 @@ angular.module('ss.login', [])
         } else {
           return true;
         }
-      }
+      };
       //$scope.login = 'Click Here to Login'
-      $ionicModal.fromTemplateUrl('features/main/modal/modal.html', {
+      $ionicModal.fromTemplateUrl('features/main/login-modal/login-modal.html', {
         scope: $scope,
         animation: 'slide-in-up'
 
@@ -23,15 +23,15 @@ angular.module('ss.login', [])
       $scope.closeModal = function () {
         $scope.modal.hide();
       };
-      //Cleanup the modal when we're done with it!
+      //Cleanup the login-modal when we're done with it!
       $scope.$on('$destroy', function () {
         $scope.modal.remove();
       });
-      // Execute action on hide modal
+      // Execute action on hide login-modal
       $scope.$on('modal.hidden', function () {
         // Execute action
       });
-      // Execute action on remove modal
+      // Execute action on remove login-modal
       $scope.$on('modal.removed', function () {
         // Execute action
       });
@@ -53,13 +53,13 @@ angular.module('ss.login', [])
             grant_type: 'password'
           }
         }).then(function (data) {
-            console.log(data);
-          $window.sessionStorage.token = data.data.access_token
+          console.log(data);
+          $window.sessionStorage.token = data.data.access_token;
 
-            return $http.get(ENDPOINT.url() + '/api/package/')
-          }, function (error) {
-            alert('The user name or password was incorrect')
-          })
+          return $http.get(ENDPOINT.url() + '/api/package/')
+        }, function (error) {
+          alert('The user name or password was incorrect')
+        })
           .then(function (data) {
             PackageFactory.setPackage(data.data.results[0]);
             $scope.closeModal();
@@ -90,7 +90,10 @@ angular.module('ss.login', [])
         //   })
       };
 
-      $scope.$on('show_login', function (event, args) {
+    debugger
+
+      $rootScope.$on('show_login', function (event, args) {
+        debugger;
         checkForModal();
 
         function checkForModal() {

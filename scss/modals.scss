@@ -1,0 +1,42 @@
+
+.modal-body {
+  text-align: center;
+  color: $coolGrey;
+
+  .row.help-row {
+    font-size: 12px;
+  }
+
+  a{
+    color: $darkSkyBlueTwo;
+    margin: 0 auto;
+
+    &.pull-right {
+      margin-right: 30px;
+    }
+  }
+
+  #logo-header {
+    height: 30vh;
+    padding-top: 20%;
+
+  }
+  .inset {
+    margin-right: 40px;
+    margin-left: 40px;
+
+    input, label span {
+
+      color: $coolGrey;
+      font-weight: 400;
+    }
+
+    ::-webkit-input-placeholder {
+
+      color: $coolGrey;
+      font-weight: 400;
+    }
+
+  }
+
+}
